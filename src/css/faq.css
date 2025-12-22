@@ -1,27 +1,20 @@
 .faq {
 
-	padding: var(--padding) 0;
+	padding: var(--margin) 0;
 
-	&__header {
+	&__box {
 
-		display: flex;
-		align-items: center;
+		display: grid;
+		grid-template-columns: 262px 608px;
 		justify-content: space-between;
-		margin-bottom: 10px;
 
-		@media $smWidth {
+	}
 
-			display: block;
-			text-align: center;
-			margin-bottom: 20px;
+	&__head {
 
-			.btn {
-
-				margin-top: 20px;
-
-			}
-
-		}
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 32px;
 
 	}
 
@@ -36,12 +29,6 @@
 		p + p {
 
 			margin-top: 10px;
-
-		}
-
-		@media $lgWidth {
-
-			max-width: 712px;
 
 		}
 

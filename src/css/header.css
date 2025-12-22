@@ -7,6 +7,12 @@
 	left: 0;
 	right: 0;
 
+	.center {
+
+		width: 1376px;
+
+	}
+
 	&--transparent {
 /*
 		body:not(.menu-show) & {

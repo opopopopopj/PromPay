@@ -13,12 +13,11 @@
 @import url(first-screen.css);
 @import url(physical-card.css);
 @import url(virtual-card.css);
-@import url(earn-rewards.css);
 @import url(faq.css);
 @import url(accordion.css);
+@import url(last-screen.css);
 
 @import url(about-us.css);
-
 @import url(contact-us.css);
 
 @import url(cookie.css);

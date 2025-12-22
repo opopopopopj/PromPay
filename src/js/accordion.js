@@ -15,10 +15,10 @@
 			const head = item.querySelector('.accordion__head'),
 				  arrow = document.createElementNS("http://www.w3.org/2000/svg", "svg");
 
-			arrow.setAttributeNS(null, "viewBox", "0 0 32 32");
-			arrow.setAttributeNS(null, "width", 32);
-			arrow.setAttributeNS(null, "height", 32);
-			arrow.innerHTML = `<path d="M19.453 22.316 7.977 10.841l1.886-1.886L21.338 20.43V10.316h2.667v14.667H9.338v-2.667z"/>`;
+			arrow.setAttributeNS(null, "viewBox", "0 0 24 24");
+			arrow.setAttributeNS(null, "width", 24);
+			arrow.setAttributeNS(null, "height", 24);
+			arrow.innerHTML = `<path d="M11 11V2h2v9h9v2h-9v9h-2v-9H2v-2z"/>`;
 
 			head.append(arrow);
 

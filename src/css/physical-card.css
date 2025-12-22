@@ -2,13 +2,6 @@
 
 	margin: var(--margin) 0;
 
-	.center {
-
-		width: 1112px;
-		padding: 0;
-
-	}
-
 	&__box {
 
 		display: flex;

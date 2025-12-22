@@ -5,6 +5,7 @@
 	&__body {
 
 		padding-bottom: 30px;
+		border-top: 1px solid #0A223929;
 
 		@media $smWidth {
 
@@ -36,10 +37,11 @@
 
 		position: relative;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
 		user-select: none;
-		padding: 30px 0;
+		padding: 29px 0;
 
 		@media $smWidth {
 

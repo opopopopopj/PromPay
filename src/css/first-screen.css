@@ -1,7 +1,13 @@
 .first-screen {
 
 	position: relative;
-	/*background-color: #67a9c7;*/
+	background-color: #67a9c7;
+
+	.center {
+
+		width: 1376px;
+
+	}
 
 	@media $mdWidth {
 

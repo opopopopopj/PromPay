@@ -7,7 +7,7 @@
 
 .center {
 
-	width: 1376px;
+	width: 1176px;
 	max-width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -25,28 +25,11 @@
 
 }
 
-@media $lgWidth {
-
-	.center {
-
-		width: 1280px;
-
-	}
-
-	:root {
-
-		--indent: 40px;
-		--padding: 70px;
-
-	}
-
-}
-
 @media $mdWidth {
 
 	:root {
 
-		--padding: 60px;
+
 
 	}
 
@@ -76,7 +59,6 @@
 
 		--indent: 20px;
 		--margin: 30px;
-		--padding: 40px;
 
 	}
 
