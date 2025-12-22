@@ -1,0 +1,223 @@
+.earn-rewards {
+
+	padding: var(--padding) 0;
+	color: #fff;
+	background-color: var(--color);
+
+	&__header {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 80px;
+
+		@media $lgWidth {
+
+			margin-bottom: 60px;
+
+		}
+
+		@media $mdWidth {
+
+			margin-bottom: 40px;
+
+		}
+
+		@media $smWidth {
+
+			display: block;
+			text-align: center;
+			margin-bottom: 24px;
+
+		}
+
+		.btn {
+
+			min-width: 168px;
+
+			@media $smWidth {
+
+				margin-top: 16px;
+
+			}
+
+		}
+
+	}
+
+	&__text {
+
+		font-size: 20px;
+		line-height: 32px;
+		margin-top: 10px;
+		max-width: 512px;
+		text-wrap: balance;
+
+		@media $lgWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
+		@media $smWidth {
+
+			font-size: 14px;
+
+		}
+
+	}
+
+	&--referral {
+
+		@media $lgWidth {
+
+			--padding: 40px;
+
+			.h5 {
+
+				font-size: 20px;
+				line-height: 32px;
+
+			}
+
+		}
+
+	}
+
+	&--referral &__header {
+
+		margin-bottom: 40px;
+
+		@media $smWidth {
+
+			text-align: left;
+
+			.h3 {
+
+				font-size: 32px;
+				line-height: 42px;
+
+			}
+
+		}
+
+	}
+
+	&--referral &__list {
+
+		grid-template-columns: 1fr 1fr;
+
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+			gap: 30px;
+
+			li {
+
+				text-align: left;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+			}
+
+			.h5 {
+
+				font-size: 18px;
+				line-height: 24px;
+
+			}
+
+		}
+
+	}
+
+	&__list {
+
+		display: grid;
+		gap: 40px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		counter-reset: item;
+
+		@media $lgWidth {
+
+			gap: 30px 54px;
+			grid-template-columns: 1fr 1fr;
+
+		}
+
+		@media $mdWidth {
+
+			gap: 40px;
+			justify-content: space-between;
+
+			.h5 {
+
+				font-size: 20px;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+			gap: 16px;
+
+		}
+
+		li {
+
+			display: grid;
+			gap: 10px;
+			counter-increment: item;
+
+			&::before {
+
+				content: counter(item, decimal-leading-zero);
+				display: block;
+				opacity: 0.16;
+				font-weight: 700;
+				font-size: 50px;
+				line-height: 1;
+
+
+			}
+
+			@media $smWidth {
+
+				text-align: center;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				justify-content: center;
+
+				&::before {
+
+					width: 100%;
+					font-size: 40px;
+
+				}
+
+			}
+
+		}
+
+		p:not([class]) {
+
+			opacity: .68;
+			font-size: 14px;
+			line-height: 24px;
+			text-wrap: balance;
+
+			@media $smWidth {
+
+				width: 100%;
+
+			}
+
+		}
+
+	}
+
+}

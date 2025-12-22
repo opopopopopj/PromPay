@@ -1,0 +1,87 @@
+	<header class="header{% if headerMod %} header--{{ headerMod }}{% endif %}">
+
+		<div class="center">
+
+			<div class="header__grid">
+
+				<p class="header__logo">
+
+					<a href="/" title="Главная страница {{ site }}">
+
+{% include "template/logo.html" %}
+
+					</a>
+
+				</p>
+
+
+				<div class="header__btn-menu-toggle">
+
+					<button class="btn btn--light btn-menu-toggle" type="button" aria-label="open menu">
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<path d="m12 10.587 4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.415 1.414-4.95-4.95-4.949 4.95-1.414-1.415 4.95-4.95-4.95-4.95L7.05 5.638z"/>
+							<path d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z"/>
+						</svg>
+					</button>
+
+				</div>
+
+				<nav class="header__menu">
+
+					<ul>
+
+{% for item in [
+	{
+		name : "Company",
+		href : "about-us"
+	},
+	{
+		name : "Referral",
+		href : "referral"
+	},
+	{
+		name : "Help Center",
+		href : "faq"
+	},
+	{
+		name : "Contact Us",
+		href : "contact-us"
+	}
+] %}
+
+						<li>
+
+							<a href="/{{ item.href }}">
+								{{ item.name }}
+							</a>
+
+						</li>
+
+{% endfor %}
+
+					</ul>
+
+				</nav>
+
+				<div class="header__btns">
+{#
+					<a class="btn btn--light" href="/">
+
+						<svg width="24" height="24" viewBox="0 0 24 24">
+							<path d="M2.05 13h5.477a17.9 17.9 0 0 0 2.925 8.881A10.005 10.005 0 0 1 2.049 13m0-2a10.005 10.005 0 0 1 8.402-8.88A17.9 17.9 0 0 0 7.527 11zm19.9 0h-5.477a17.9 17.9 0 0 0-2.925-8.88A10.005 10.005 0 0 1 21.95 11m0 2a10.005 10.005 0 0 1-8.402 8.881A17.9 17.9 0 0 0 16.473 13zM9.53 13h4.94A15.9 15.9 0 0 1 12 20.592 15.9 15.9 0 0 1 9.53 13m0-2A15.9 15.9 0 0 1 12 3.409 15.9 15.9 0 0 1 14.47 11z"/>
+						</svg>
+
+						Eng
+					</a>
+#}
+					<a class="btn btn--white" href="/get-card">
+						Get My Card
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>

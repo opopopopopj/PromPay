@@ -1,0 +1,63 @@
+	<article class="earn-rewards">
+
+		<div class="center">
+
+			<div class="earn-rewards__header">
+
+				<div class="earn-rewards__header-left">
+
+					<h2 class="earn-rewards__title h3">
+						Invite Friends & Earn Rewards
+					</h2>
+
+					<p class="earn-rewards__text">
+						Earn up to 40% from your friends’ spending: simple, transparent, and instant.
+					</p>
+
+				</div>
+
+				<a href="/" class="btn btn--blue">
+					Learn More
+				</a>
+
+			</div>
+
+			<ol class="earn-rewards__list">
+
+{% for li in [
+	{
+		name : "Share your link",
+		text : "Get your personal referral link in the Azul Cards app or Telegram bot."
+	},
+	{
+		name : "Invite friends",
+		text : "Send it to your friends, followers, or community."
+	},
+	{
+		name : "They start spending",
+		text : "Once their card is active, every purchase counts."
+	},
+	{
+		name : "You earn instantly",
+		text : "Receive up to 40% of revenue from their transactions."
+	}
+] %}
+				<li>
+
+					<p class="h5">
+						{{ li.name }}
+					</p>
+
+					<p>
+						{{ li.text }}
+					</p>
+
+				</li>
+
+{% endfor %}
+
+			</ol>
+
+		</div>
+
+	</article>

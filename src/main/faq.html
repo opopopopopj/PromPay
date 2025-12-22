@@ -1,0 +1,76 @@
+	<article class="faq">
+
+		<div class="center">
+
+			<header class="faq__header">
+
+				<h2 class="faq__title h3">
+					FAQ
+				</h2>
+
+				<a href="/faq/" class="btn btn--blue">
+					More Questions?
+				</a>
+
+			</header>
+
+			<div class="accordion">
+
+{% for item in [
+	{
+		head : "What is Azul Card?",
+		text : "Azul Card is an anonymous, crypto-funded Visa or Mastercard. You can easily top up your card using cryptocurrency, and your funds are automatically converted into fiat USD and added to your card balance. The top-up and conversion process takes just a few minutes and a few clicks.</p><p>Note: Azul Card is intended for lawful use only. Users must comply with their local laws and regulations."
+	},
+	{
+		head : "Why No App? Why only Telegram?",
+		text : "Most modern cards require you to install a mobile app or at least a Telegram mini app. Unlike those, our Telegram bot does not collect any personal data — it has no access to your IP address, device information, phone number, or email.</p><p>We physically have no access to your personal information, and that’s the best guarantee that we’ll never share it with anyone. Our privacy-first policy allows us to operate without asking for anything from you — your Telegram account is all we need. This means your identity remains completely private, while you can still manage your card instantly, 24/7, from any device."
+	},
+	{
+		head : "What \"No Trust Needed\" means?",
+		text : "Unlike most crypto cards that require you to deposit funds into their internal wallet, Azul Card works differently. You stay in full control of your funds at all times — you don’t even need to trust us to use your card effectively. You keep your crypto in your own wallet and only send it when you want to top up your card. Once the top-up is processed, your crypto is instantly converted to fiat and added to your card balance.</p><p>The top-up process takes just a few minutes, so there’s no need to preload large amounts in advance. Even in the worst-case scenario, potential losses are minimal — and your absolute privacy remains fully intact. Don’t trust anyone — just keep your crypto in your wallet, as you always have."
+	},
+	{
+		head : "Can I add my Azul Card to Apple Pay or Google Pay?",
+		text : "Absolutely.<br>You can link the card in just a few steps.<br>For a detailed guide, check out our Help Center about <a class=\"link\" href=\"https://docs.azul.cards/how-to-use/how-to-add-card-to-apple-pay\" target=\"_blank\" rel=\"noopener nofollow\">Apple Pay</a> or <a class=\"link\" href=\"https://docs.azul.cards/how-to-use/how-to-add-card-to-google-pay\" target=\"_blank\" rel=\"noopener nofollow\">Google Pay</a>"
+	},
+	{
+		head : "What are the fees and limits?",
+		text : "Card creation fee is $20 (one-time payment, refunded after you spend $2000) and crypto top-up fee is 4% fee. The transaction limit is $20,000 (more details are <a class=\"link\" href=\"https://docs.azul.cards/getting-started/what-are-the-fees-and-limits\" target=\"_blank\" rel=\"noopener nofollow\">here</a>)</p><p>Need higher limits? Contact our <a class=\"link\" href=\"/contact-us/\">support team</a> to discuss increasing your limits."
+	},
+	{
+		head : "What if I have a problem with my card?",
+		text : "No worries — our <a class=\"link\" href=\"/contact-us/\">support team</a> is available 24/7.</p><p>If something isn’t working as expected, simply contact us through the app or Telegram bot. <br>We’ll respond quickly and help you get back to using your card with confidence."
+	}
+] %}
+
+				<section class="accordion__item">
+
+					<div class="accordion__head">
+
+						<h3 class="h4">
+							{{ item.head }}
+						</h3>
+
+					</div>
+
+					<div class="accordion__body">
+
+						<div class="accordion__body-inner faq__text">
+
+							<p>
+								{{ item.text | safe }}
+							</p>
+
+						</div>
+
+					</div>
+
+				</section>
+
+{% endfor %}
+
+			</div>
+
+		</div>
+
+	</article>

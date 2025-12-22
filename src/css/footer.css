@@ -1,0 +1,218 @@
+.footer {
+
+	flex-shrink: 0;
+	position: relative;
+	color: #fff;
+	background-color: var(--color);
+	padding: var(--margin) 0;
+
+	.center {
+
+		@media $mdWidth {
+
+			width: 100%;
+
+		}
+
+	}
+
+	&__grid {
+
+		display: grid;
+		align-content: flex-start;
+		grid-template-areas: "logo menu social"
+							 "copyright menu social";
+		grid-template-columns: 280px 1fr auto;
+		margin: 10px 0;
+		gap: 40px;
+
+		@media $lgWidth {
+
+			grid-template-areas: "menu menu social"
+								 "logo copyright copyright";
+			grid-template-columns: auto auto;
+			gap: 50px;
+
+		}
+
+		@media $smWidth {
+
+			grid-template-areas: "menu" "social" "logo" "copyright";
+			grid-template-columns: auto;
+			gap: 30px;
+			margin: 20px 0;
+
+		}
+
+	}
+
+	&__logo {
+
+		grid-area: logo;
+
+		@media $lgWidth {
+
+			display: flex;
+			align-items: center;
+
+		}
+
+		@media $smWidth {
+
+			justify-content: center;
+
+		}
+
+	}
+
+	&__menu {
+
+		grid-area: menu;
+
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+
+		@media $lgWidth {
+
+			justify-content: flex-start;
+
+			li {
+
+				padding-bottom: 20px;
+
+			}
+
+		}
+
+		@media $mdWidth {
+
+			ul {
+
+				gap: 10px;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			justify-content: center;
+
+			ul {
+
+				gap: 20px;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				display: flex;
+				margin-bottom: 10px;
+				column-count: auto;
+
+			}
+
+			li {
+
+				padding: 0;
+
+			}
+
+		}
+
+		ul {
+
+			column-count: 3;
+			gap: 40px;
+			margin-bottom: -30px;
+
+		}
+
+		li {
+
+			padding-bottom: 30px;
+			white-space: nowrap;
+
+		}
+
+		a {
+
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 32px;
+
+		}
+
+	}
+
+	&__social {
+
+		grid-area: social;
+		display: flex;
+		gap: 20px;
+
+		@media $lgWidth {
+
+			justify-content: flex-end;
+
+		}
+
+		@media $smWidth {
+
+			justify-content: center;
+
+		}
+
+		svg {
+
+			background-color: #fff;
+			border-radius: 20px;
+			color: var(--color);
+
+		}
+
+	}
+
+	&__copyright {
+
+		grid-area: copyright;
+		display: grid;
+		gap: 20px;
+		opacity: .54;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 20px;
+		text-wrap: pretty;
+
+		@media $lgWidth {
+
+			justify-content: flex-end;
+			text-align: right;
+
+			p {
+
+				max-width: 520px;
+
+			}
+
+		}
+
+		@media $mdWidth {
+
+			p {
+
+				max-width: 376px;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			text-align: center;
+			justify-content: center;
+
+		}
+
+	}
+
+}

@@ -1,0 +1,145 @@
+/* h */
+
+.h1, .h2, .h3, .h4, .h4-v2, .h5 {
+
+	font-weight: 700;
+	text-wrap: balance;
+
+}
+
+.h1 {
+
+	font-size: 72px;
+	line-height: 90px;
+
+	@media $lgWidth {
+
+		font-size: 48px;
+		line-height: 1.25;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 44px;
+		line-height: 50px;
+
+	}
+
+	@media $xsWidth {
+
+		font-size: 36px;
+
+	}
+
+}
+
+.h2 {
+
+	font-size: 64px;
+	line-height: 72px;
+
+	@media $lgWidth {
+
+		font-size: 48px;
+		line-height: 60px;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 32px;
+		line-height: 40px;
+
+	}
+
+}
+
+.h3 {
+
+	font-size: 40px;
+	line-height: 1.4;
+
+	@media $lgWidth {
+
+		font-size: 32px;
+		line-height: 1.5;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 24px;
+		line-height: 32px;
+
+	}
+
+}
+
+
+.h4 {
+
+	font-size: 24px;
+	line-height: 32px;
+
+	@media $lgWidth {
+
+		font-size: 24px;
+		line-height: 32px;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 18px;
+		line-height: 28px;
+
+	}
+
+}
+
+.h4-v2 {
+
+	font-size: 26px;
+	line-height: 40px;
+
+	@media $mdWidth {
+
+		font-size: 24px;
+		line-height: 32px;
+
+	}
+
+	@media $smWidth {
+
+		font-size: 20px;
+
+	}
+
+}
+
+.h5 {
+
+	font-size: 20px;
+	line-height: 32px;
+
+	@media $lgWidth {
+
+		font-size: 18px;
+		line-height: 32px;
+
+	}
+
+}
+
+.color-blue {
+
+	color: var(--blue);
+
+}
+
+.color-white {
+
+	color: white;
+
+}

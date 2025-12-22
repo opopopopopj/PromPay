@@ -1,0 +1,40 @@
+.cookie {
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: var(--indent);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+
+	&__box {
+
+		display: flex;
+		gap: var(--gap);
+		align-items: center;
+		padding: var(--gap);
+		border-radius: 14px;
+
+		background-color: #5b74ec;
+		box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(10, 34, 57, 0.06);
+		color: #fff;
+
+		@media $smWidth {
+
+			flex-direction: column;
+			justify-content: center;
+			text-align: center;
+			gap: 10px;
+
+		}
+
+	}
+
+	&__text {
+
+		flex-grow: 1;
+
+	}
+
+}

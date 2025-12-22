@@ -1,0 +1,63 @@
+.faq {
+
+	padding: var(--padding) 0;
+
+	&__header {
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10px;
+
+		@media $smWidth {
+
+			display: block;
+			text-align: center;
+			margin-bottom: 20px;
+
+			.btn {
+
+				margin-top: 20px;
+
+			}
+
+		}
+
+	}
+
+	&__text {
+
+		font-size: 18px;
+		line-height: 32px;
+		max-width: 1080px;
+		width: 94%;
+		text-wrap: pretty;
+
+		p + p {
+
+			margin-top: 10px;
+
+		}
+
+		@media $lgWidth {
+
+			max-width: 712px;
+
+		}
+
+		@media $mdWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
+		@media $smWidth {
+
+			font-size: 14px;
+
+		}
+
+	}
+
+}

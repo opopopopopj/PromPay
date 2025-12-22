@@ -1,0 +1,79 @@
+.accordion {
+
+	position: relative;
+
+	&__body {
+
+		padding-bottom: 30px;
+
+		@media $smWidth {
+
+			padding-bottom: 20px;
+
+		}
+
+	}
+
+	&__item:not(.is-open) &__body {
+
+		overflow: hidden;
+		padding-bottom: 0;
+
+		position: relative;
+		max-height: 0;
+		opacity: 0;
+		transition: opacity var(--transitionDefault);
+
+	}
+
+	&__item {
+
+		border-bottom: 1px solid #0A223929;
+
+	}
+
+	&__head {
+
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		cursor: pointer;
+		user-select: none;
+		padding: 30px 0;
+
+		@media $smWidth {
+
+			padding: 20px 0;
+
+			svg {
+
+				width: 28px;
+				height: 28px;
+
+			}
+
+		}
+
+	}
+
+	&__item.is-open &__body {
+
+		overflow: visible;
+		max-height: auto;
+		opacity: 1;
+
+	}
+
+	&__item.is-open &__head {
+
+		padding-bottom: 10px;
+
+		svg {
+
+			transform: scaleY(-1);
+
+		}
+
+	}
+
+}

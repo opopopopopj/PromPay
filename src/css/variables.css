@@ -1,0 +1,22 @@
+:root {
+
+	--color: #0A2239;
+
+	--blue: #4162FF;
+
+	--bg: #fff;
+
+	--transitionDefault: 0s;
+
+	--indent: 32px;
+	--gap: 24px;
+	--padding: 100px;
+	--margin: 40px;
+
+}
+
+$desktop: (min-width: 1250px);
+$lgWidth: (max-width: 1336px);
+$mdWidth: (max-width: 1000px);
+$smWidth: (max-width: 740px);
+$xsWidth: (max-width: 374px);
