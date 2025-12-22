@@ -1,0 +1,66 @@
+.physical-card {
+
+	margin: var(--margin) 0;
+
+	.center {
+
+		width: 1112px;
+		padding: 0;
+
+	}
+
+	&__box {
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+	}
+
+	&__content {
+
+		max-width: 520px;
+
+	}
+
+	&__title {
+
+		margin: 10px 0 20px;
+
+	}
+
+	&__text {
+
+		font-size: 20px;
+		line-height: 32px;
+
+		@media $mdWidth {
+
+
+		}
+
+	}
+
+	&__list {
+
+		display: flex;
+		justify-content: space-between;
+		margin: 32px 0;
+
+		svg {
+
+			margin-bottom: 10px;
+			border-radius: 20px;
+			background-color: rgba(10, 34, 57, 0.07);
+
+		}
+
+	}
+
+	&__btn {
+
+		display: flex;
+
+	}
+
+}

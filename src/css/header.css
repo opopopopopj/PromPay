@@ -3,22 +3,22 @@
 	flex-shrink: 0;
 	position: absolute;
 	z-index: 8;
-	top: var(--margin);
+	top: 20px;
 	left: 0;
 	right: 0;
 
 	&--transparent {
-
+/*
 		body:not(.menu-show) & {
 
 			.header__logo #logo-cards {
 
-				fill: var(--blue);
+				fill: var(--accent);
 
 			}
 
 		}
-
+ */
 	}
 
 	&--white {
@@ -27,12 +27,12 @@
 		position: relative;
 		padding: 10px 0;
 		box-shadow: 4px 4px 20px rgba(10, 34, 57, 0.1);
-
+/*
 		body:not(.menu-show) & {
 
 			.header__logo #logo-azul {
 
-				fill: var(--blue);
+				fill: var(--accent);
 
 			}
 
@@ -40,13 +40,13 @@
 
 				.btn--light {
 
-					color: var(--blue);
+					color: var(--accent);
 
 				}
 
 				.btn--white {
 
-					background-color: var(--blue);
+					background-color: var(--accent);
 					color: #fff;
 
 				}
@@ -55,7 +55,7 @@
 
 			.btn-menu-toggle {
 
-				color: var(--blue);
+				color: var(--accent);
 
 			}
 
@@ -66,7 +66,7 @@
 			}
 
 		}
-
+*/
 	}
 
 	.center {
@@ -113,31 +113,6 @@
 
 		grid-area: logo;
 
-		#logo-azul {
-
-			fill: #fff;
-
-		}
-
-		#logo-cards {
-
-			fill: #001A95;
-
-		}
-
-		@media $lgWidth {
-
-			width: 148px;
-
-			svg {
-
-				width: 123px;
-				height: 20px;
-
-			}
-
-		}
-
 	}
 
 	&__menu {
@@ -155,13 +130,7 @@
 
 			display: flex;
 			justify-content: center;
-			gap: 80px;
-
-			@media $lgWidth {
-
-				gap: 50px;
-
-			}
+			gap: 60px;
 
 			@media $mdWidth {
 
@@ -174,13 +143,6 @@
 		a {
 
 			font-weight: 500;
-			font-size: 18px;
-
-			@media $lgWidth {
-
-				font-size: 14px;
-
-			}
 
 			@media $mdWidth {
 
@@ -247,19 +209,6 @@
 		grid-area: btns;
 		display: flex;
 		gap: 20px;
-
-		@media $lgWidth {
-
-			gap: 10px;
-
-			.btn--light {
-
-				padding-left: 16px;
-				padding-right: 16px;
-
-			}
-
-		}
 
 		@media $smWidth {
 

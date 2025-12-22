@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-/* color: red !important */
+color: red !important
 }
 
 html {
@@ -28,7 +28,7 @@ body {
 	color: var(--color);
 	font-size: 16px;
 	line-height: 1.5;
-	font-family: 'Inter', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	-webkit-text-size-adjust: none;
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: scrollbar;
@@ -37,7 +37,7 @@ body {
 	flex-direction: column;
 	position: relative;
 	background-color: var(--bg);
- /* background-image: url(/css/1.png); */
+ background-image: url(/css/1.png);
 background-position: top;
 }
 
@@ -52,7 +52,7 @@ a {
 ::selection {
 
 	color: #fff;
-	background-color: var(--blue);
+	background-color: var(--accent);
 
 }
 

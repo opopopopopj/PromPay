@@ -10,8 +10,8 @@
 
 @import url(apps.css);
 
-@import url(simplest-use.css);
-@import url(pay-with.css);
+@import url(first-screen.css);
+@import url(physical-card.css);
 @import url(more-card.css);
 @import url(earn-rewards.css);
 @import url(faq.css);

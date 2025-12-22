@@ -193,7 +193,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: var(--blue);
+		color: var(--accent);
 		margin-bottom: 30px;
 
 		@media $smWidth {
