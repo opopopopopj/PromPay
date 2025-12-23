@@ -43,9 +43,9 @@ let config             = null;
 
 const timestamp        = Date.now();
 const site             = 'prompay.cards';
-const domain           = 'prompay.htmlpluscss.site';
+const domain           = 'prompay.htmlpluscss.website';
 
-const folderWatch      = 'about-us';
+const folderWatch      = 'main';
 
 try {
 
@@ -75,10 +75,7 @@ const html = (files, since = {}, folder = '') => {
 		.pipe(replace('	', '  '))
 		.pipe(w3cjs({
 			url : 'https://validator.w3.org/nu/',
-			verifyMessage: (type, message) => {
-				if(message.includes('iframe')) return false;
-				return true;
-			}
+			verifyMessage: (type, message) => !message.includes('iframe')
 		}))
 		.pipe(w3cjs.reporter())
 		.pipe(gulp.dest('build' + folder))
@@ -185,8 +182,8 @@ gulp.task('ftp', () => {
 		.pipe(debug({title: 'ftp:'}))
 		.pipe(f)
 		.pipe(replace('"https://' + site, '"https://' + domain))
-		.pipe(replace('css/styles.css', 'css/styles.min.css'))
-		.pipe(replace('js/scripts.js', 'js/scripts.min.js'))
+		.pipe(replace('css/styles.css', 'css/styles.min.css?' + Date.now()))
+		.pipe(replace('js/scripts.js', 'js/scripts.min.js?' + Date.now()))
 		.pipe(f.restore)
 		.pipe(conn.dest(domain));
 

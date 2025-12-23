@@ -1,5 +1,5 @@
 # PromPay
-[build](https://prompay.htmlpluscss.site/)
+[build](https://prompay.htmlpluscss.website/)
 
 # Устанавить зависимости
 npm install

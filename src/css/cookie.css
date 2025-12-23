@@ -16,8 +16,8 @@
 		padding: var(--gap);
 		border-radius: 14px;
 
-		background-color: #5b74ec;
-		box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06), inset 0 0 0 1px rgba(10, 34, 57, 0.06);
+		background-color: #67a9c7;
+		box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
 		color: #fff;
 
 		@media $smWidth {
@@ -34,6 +34,13 @@
 	&__text {
 
 		flex-grow: 1;
+		text-wrap: pretty;
+
+		a {
+
+			white-space: nowrap;
+
+		}
 
 	}
 

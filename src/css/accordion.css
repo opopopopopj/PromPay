@@ -1,11 +1,11 @@
 .accordion {
 
 	position: relative;
+	border-top: 1px solid #0A223929;
 
 	&__body {
 
 		padding-bottom: 30px;
-		border-top: 1px solid #0A223929;
 
 		@media $smWidth {
 
@@ -47,13 +47,6 @@
 
 			padding: 20px 0;
 
-			svg {
-
-				width: 28px;
-				height: 28px;
-
-			}
-
 		}
 
 	}
@@ -68,9 +61,9 @@
 
 	&__item.is-open &__head {
 
-		padding-bottom: 10px;
+		padding-bottom: 8px;
 
-		svg {
+		svg line:first-child {
 
 			transform: scaleY(-1);
 

@@ -3,7 +3,7 @@
 	flex-shrink: 0;
 	position: relative;
 	color: #fff;
-	/* background-color: var(--color); */
+	background-color: var(--color);
 	padding: 40px 0;
 
 	.center {
