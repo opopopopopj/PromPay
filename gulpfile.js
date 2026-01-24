@@ -42,7 +42,7 @@ const w3cjs            = require('gulp-w3cjs');
 let config             = null;
 
 const timestamp        = Date.now();
-const site             = 'prompay.cards';
+const site             = 'prompay.org';
 const domain           = 'prompay.htmlpluscss.website';
 
 const folderWatch      = 'main';
