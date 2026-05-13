@@ -1,13 +1,7 @@
 .first-screen {
 
 	position: relative;
-	background-color: #67a9c7;
-
-	.center {
-
-		width: 1376px;
-
-	}
+	outline:1px solid red;
 
 	@media $mdWidth {
 
@@ -17,11 +11,8 @@
 	&__box {
 
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
-		position: relative;
-		z-index: 1;
-		padding: 266px 0 336px;
+		padding: 148px 0 100px;
 
 		@media $mdWidth {
 
@@ -33,50 +24,53 @@
 
 	&__content {
 
-		width: 750px;
-		color: #fff;
-
-		@media $mdWidth {
-
-			text-align: center;
-			max-width: 100%;
-			width: auto;
-			padding-bottom: 80px;
-
-		}
-
-		@media $smWidth {
-
-			padding-bottom: 64px;
-
-		}
+		width: 640px;
 
 	}
 
 	&__title {
 
-		margin-bottom: 40px;
+		margin: 39px 0 21px;
+
+		b {
+
+			display: block;
+			color: #940000;
+
+		}
 
 	}
 
 	&__text {
 
-		font-size: 18px;
+		font-weight: 500;
+		font-size: 24px;
 		line-height: 32px;
-		max-width: 520px;
-		margin-bottom: 56px;
+		display: flex;
+		gap: var(--gap);
+		align-items: center;
 
-		@media $mdWidth {
+	}
 
-			max-width: 400px;
-			margin: 0 auto 40px;
+	&__btn {
 
-		}
+		margin: 49px 0 41px;
+		max-width: 400px;
 
-		@media $smWidth {
+	}
 
-			font-size: 14px;
-			line-height: 24px;
+	&__pay {
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		align-content: center;
+		gap: 16px;
+		max-width: 400px;
+
+		img {
+
+			margin: auto;
 
 		}
 
@@ -87,49 +81,45 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		right: 0;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		z-index: -1;
+		overflow: hidden;
 
 	}
 
-	&__account {
+	&__imgs {
+
+		position: relative;
+		flex-grow: 1;
+		display: flex;
+		justify-content: flex-end;
+
+	}
+
+	&__logo-bg {
 
 		position: absolute;
-
-		width: 347px;
-		height: 371px;
-		overflow: hidden;
-		right: 147px;
+		top: 16px;
+		left: -62px;
 		bottom: 0;
+		margin: auto;
 
-		&-box {
+	}
 
-			background-color: rgba(10, 34, 57, 0.42);
-			border: 1px solid rgba(255, 255, 255, 0.4);
-			backdrop-filter: blur(20px);
-			border-radius: 20px;
+	&__terminal {
 
-			display: grid;
-			justify-content: center;
-			text-align: center;
-			padding: 20px;
+		top: 11px;
+		left: -7px;
 
-		}
+	}
 
-		&-head {
+	&__phone {
 
-			line-height: 32px;
-			color: #fff;
-
-		}
-
-		&-value {
-
-			margin-bottom: 40px;
-			color: #fff;
-
-		}
+		left: 53px;
+		z-index: 1;
 
 	}
 

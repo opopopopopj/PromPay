@@ -1,18 +1,10 @@
 /* h */
 
-/*
-.h1, .h2, .h3, .h4 {
-
-	font-weight: 700;
-	text-wrap: balance;
-
-}
-
 .h1 {
 
-	font-weight: 600;
-	font-size: 90px;
-	line-height: 1;
+	font-weight: 700;
+	font-size: 70px;
+	line-height: 80px;
 
 	@media $smWidth {
 
@@ -25,6 +17,15 @@
 	}
 
 }
+
+/*
+.h1, .h2, .h3, .h4 {
+
+	font-weight: 700;
+	text-wrap: balance;
+
+}
+
 
 .h2 {
 

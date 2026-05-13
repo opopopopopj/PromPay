@@ -7,12 +7,12 @@
 @import url(header.css);
 @import url(footer.css);
 @import url(content.css);
-/*
-@import url(apps.css);
 
 @import url(first-screen.css);
-@import url(physical-card.css);
-@import url(virtual-card.css);
+@import url(features.css);
+@import url(secure.css);
+/*
+@import url(apps.css);
 @import url(faq.css);
 @import url(accordion.css);
 @import url(last-screen.css);
