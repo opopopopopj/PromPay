@@ -75,6 +75,14 @@
 
 	}
 
+
+	&--small {
+
+		font-weight: 600;
+		font-size: 16px;
+
+	}
+
 	&--medium {
 
 		padding: 16px 32px;
