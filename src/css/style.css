@@ -1,13 +1,13 @@
 @import url(fonts.css);
 @import url(variables.css);
-@import url(media.css);
+/* @import url(media.css); */
 @import url(default.css);
-@import url(form.css);
+/* @import url(form.css); */
 
 @import url(header.css);
 @import url(footer.css);
 @import url(content.css);
-
+/*
 @import url(apps.css);
 
 @import url(first-screen.css);
@@ -27,3 +27,4 @@
 @import url(list-cards.css);
 
 @import url(referral.css);
+ */

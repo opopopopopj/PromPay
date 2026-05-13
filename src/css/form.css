@@ -40,15 +40,16 @@
 
 	padding: 12px 24px;
 	font-weight: 500;
+	font-size: 22px;
+	line-height: 24px;
 	display: grid;
 	align-items: center;
 	justify-content: center;
 	grid-auto-flow: column;
 	gap: 4px;
-	border-radius: 24px;
+	border-radius: 28px;
 	background-color: var(--color);
-	color: var(--bg);
-	min-width: 130px;
+	color: #fff;
 
 	svg {
 
@@ -74,11 +75,19 @@
 
 	}
 
+	&--medium {
+
+		padding: 16px 32px;
+		gap: 8px;
+		border: 1px solid rgba(0, 21, 36, 0.06);
+		box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
+
+	}
 
 	&--white {
 
 		background-color: #fff;
-		color: var(--color);
+		color: var(--second);
 
 	}
 

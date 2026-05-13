@@ -1,5 +1,5 @@
-# PromPay
-[build](https://prompay.htmlpluscss.website/)
+# PayTao
+[build](https://paytao.1bg.ru/)
 
 # Устанавить зависимости
 npm install

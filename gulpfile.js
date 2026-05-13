@@ -42,8 +42,8 @@ const w3cjs            = require('gulp-w3cjs');
 let config             = null;
 
 const timestamp        = Date.now();
-const site             = 'prompay.org';
-const domain           = 'prompay.htmlpluscss.website';
+const site             = 'paytao.org';
+const domain           = 'paytao.1bg.ru';
 
 const folderWatch      = 'main';
 
@@ -169,11 +169,11 @@ gulp.task('copy', () => {
 
 gulp.task('ftp', () => {
 
-	if(!config) {
+//	if(!config) {
 
 		return true;
 
-	}
+//	}
 
 	const f = filter('**/*.html', {restore: true});
 	const conn = ftp.create( config.ftp );

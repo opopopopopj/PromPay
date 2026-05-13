@@ -1,16 +1,16 @@
 :root {
 
-	--color: #0A2239;
+	--color: #001524;
 
-	--accent: #FF3617;
+	--second: #0A2239;
 
-	--bg: #fff;
+	--bg: #FBF9F9;
 
 	--transitionDefault: 0s;
 
-	--indent: 32px;
+	--indent: 40px;
 	--gap: 24px;
-	--margin: 150px;
+	--margin: 120px;
 
 }
 
