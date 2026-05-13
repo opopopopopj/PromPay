@@ -7,18 +7,22 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-outline:1px solid red;
+		padding: 70px 80px;
+		background-image: linear-gradient(111.46deg, #2C2C2C, #191919);
+		border-radius: 30px;
+		color: #fff;
+
 	}
 
 	&__content {
 
-		max-width: 558px;
+		max-width: 670px;
 
 	}
 
 	&__title {
 
-		margin: 10px 0 20px;
+		margin-bottom: 20px;
 
 	}
 
@@ -26,6 +30,7 @@ outline:1px solid red;
 
 		font-size: 20px;
 		line-height: 32px;
+		max-width: 520px;
 
 		@media $mdWidth {
 
@@ -38,13 +43,13 @@ outline:1px solid red;
 
 		display: flex;
 		justify-content: space-between;
-		margin: 32px 0;
+		margin: 56px 0;
 
 		svg {
 
 			margin-bottom: 10px;
 			border-radius: 20px;
-			background-color: rgba(10, 34, 57, 0.1);
+			background-color: rgba(255, 255, 255, 0.1);
 
 		}
 
@@ -52,7 +57,17 @@ outline:1px solid red;
 
 	&__btn {
 
-		display: flex;
+		max-width: 250px;
+
+	}
+
+	&__img {
+
+		img {
+
+			left: 20px;
+
+		}
 
 	}
 
