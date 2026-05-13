@@ -99,4 +99,12 @@
 
 	}
 
+	&--gray {
+
+		background: linear-gradient(rgba(10, 34, 57, 0.12), rgba(10, 34, 57, 0.12)), #FFFFFF;
+		font-weight: 600;
+		color: var(--second);
+
+	}
+
 }
