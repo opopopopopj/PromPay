@@ -70,8 +70,42 @@
 							<svg width="24" height="24" viewBox="0 0 24 24">
 								<path d="M2.05 13h5.477a17.9 17.9 0 0 0 2.925 8.88A10.005 10.005 0 0 1 2.049 13m0-2a10.005 10.005 0 0 1 8.402-8.881 17.9 17.9 0 0 0-2.925 8.88zm19.9 0h-5.477a17.9 17.9 0 0 0-2.925-8.881 10.005 10.005 0 0 1 8.403 8.88m0 2a10.005 10.005 0 0 1-8.402 8.88A17.9 17.9 0 0 0 16.473 13zM9.53 13h4.94A15.9 15.9 0 0 1 12 20.592 15.9 15.9 0 0 1 9.53 13m0-2A15.9 15.9 0 0 1 12 3.408 15.9 15.9 0 0 1 14.47 11z"/>
 							</svg>
-							RU
+							<span class="lang__current-value">
+								RU
+							</span>
 						</button>
+
+						<ul class="lang__list">
+{% for item in [
+	{
+		name : "English",
+		code : "en"
+	},
+	{
+		name : "한국어",
+		code : "ch"
+	},
+	{
+		name : "French",
+		code : "fr"
+	},
+	{
+		name : "Português",
+		code : "po"
+	},
+	{
+		name : "Русский",
+		code : "ru",
+		current : true
+	}
+] %}
+							<li>
+								<a href="?{{ item.code }}"{% if item.current %} class="is-current" {% endif %}>
+									{{ item.name }}
+								</a>
+							</li>
+{% endfor %}
+						</ul>
 
 					</div>
 

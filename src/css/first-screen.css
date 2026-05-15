@@ -1,7 +1,6 @@
 .first-screen {
 
 	position: relative;
-	outline:1px solid red;
 
 	@media $mdWidth {
 
@@ -54,7 +53,7 @@
 
 	&__btn {
 
-		margin: 49px 0 41px;
+		margin: 49px 0 45px;
 		max-width: 400px;
 
 	}
@@ -82,11 +81,14 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		height: 100vh;
-		display: flex;
-		justify-content: center;
 		z-index: -1;
-		overflow: hidden;
+
+		img {
+
+			width: 100%;
+			height: auto;
+
+		}
 
 	}
 

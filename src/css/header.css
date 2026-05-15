@@ -156,6 +156,48 @@
 		border: 1px solid rgba(255, 255, 255, 0.2);
 		border-radius: 28px;
 		font-weight: 600;
+		text-transform: uppercase;
+
+	}
+
+	&__list {
+
+		display: grid;
+		padding: 12px 24px;
+		gap: 12px;
+
+		position: absolute;
+		left: 50%;
+		top: 58px;
+		transform: translateX(-50%);
+
+		background-color: #FBF9F9;
+		border: 1px solid rgba(10, 34, 57, 0.06);
+		box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
+		border-radius: 20px;
+
+		white-space: nowrap;
+		text-align: center;
+		font-weight: 500;
+
+		.is-current {
+
+			color: #940000;
+			transition: var(--transitionDefault);
+
+		}
+
+	}
+
+	&.is-open &__current {
+
+		color: #940000;
+
+	}
+
+	&:not(.is-open) &__list {
+
+		display: none;
 
 	}
 

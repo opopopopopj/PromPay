@@ -1,4 +1,4 @@
-.secure {
+.secure-add {
 
 	margin: var(--margin) 0;
 
@@ -8,10 +8,10 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 70px 80px;
-		outline:1px solid red;
+		/*background-image: linear-gradient(111.46deg, #2C2C2C, #191919);*/
 		border-radius: 30px;
 		color: #fff;
-
+outline:1px solid red;
 	}
 
 	&__content {
