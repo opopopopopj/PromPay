@@ -1,0 +1,105 @@
+.virtual-card {
+
+	margin: var(--margin) 0;
+	color: var(--second);
+
+	&__title {
+
+		text-align: center;
+
+	}
+
+	&__intro {
+
+		text-align: center;
+		margin: 24px 0 32px;
+		font-weight: 500;
+		font-size: 24px;
+
+		b {
+
+			color: #8D0101;
+			font-weight: initial;
+
+		}
+
+	}
+
+	&__box {
+
+		border-radius: 30px;
+		padding: 50px;
+		background-color: #FAEFED;
+
+	}
+
+	&__table {
+
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 40px;
+
+		th, td {
+
+			padding-bottom: 16px;
+			padding-right: 24px;
+
+		}
+
+		th {
+
+			text-align: left;
+			font-weight: 500;
+			padding-right: 63px;
+
+		}
+
+		td {
+
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 40px;
+
+		}
+
+		&-ico {
+
+			display: flex;
+			align-items: center;
+			gap: 16px;
+
+		}
+
+	}
+
+	&__color-green {
+
+		color: #417B5A;
+
+	}
+
+	&__btn {
+
+		display: flex;
+		margin-top: 30px;
+
+	}
+
+	&__bg {
+
+		position: absolute;
+		top: 0;
+		right: 0;
+		object-fit: cover;
+
+	}
+
+	&__img {
+
+		position: absolute;
+		right: 32px;
+		bottom: 0;
+
+	}
+
+}
