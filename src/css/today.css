@@ -1,0 +1,29 @@
+.today {
+
+	margin: var(--margin) 0;
+	color: var(--second);
+
+	&__title {
+
+		text-align: center;
+		font-weight: 700;
+
+	}
+
+	&__list {
+
+		margin-top: 32px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 32px;
+
+	}
+
+	&__item {
+
+		background-color: #fff;
+		border-radius: 30px;
+
+	}
+
+}

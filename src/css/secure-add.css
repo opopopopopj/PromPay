@@ -4,19 +4,23 @@
 
 	&__box {
 
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
 		padding: 70px 80px;
-		/*background-image: linear-gradient(111.46deg, #2C2C2C, #191919);*/
+		background-image: linear-gradient(111.46deg, #2C2C2C, #191919);
 		border-radius: 30px;
 		color: #fff;
-outline:1px solid red;
+
+	}
+
+	&__flex {
+
+		display: flex;
+		justify-content: space-between;
+
 	}
 
 	&__content {
 
-		max-width: 670px;
+		max-width: 520px;
 
 	}
 
@@ -47,13 +51,37 @@ outline:1px solid red;
 
 	&__list {
 
-		display: flex;
+		display: grid;
+		grid-template-columns: 330px 330px 330px;
 		justify-content: space-between;
-		margin: 56px 0;
+		margin-top: 56px;
+
+		li {
+
+			display: flex;
+			gap: 16px;
+
+		}
+
+		span {
+
+			color: rgba(255, 255, 255, 0.8);
+
+		}
+
+		b {
+
+			display: block;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 8px;
+			color: rgba(255, 255, 255, 1);
+
+		}
 
 		svg {
 
-			margin-bottom: 10px;
 			border-radius: 20px;
 			background-color: rgba(255, 255, 255, 0.1);
 
@@ -61,17 +89,11 @@ outline:1px solid red;
 
 	}
 
-	&__btn {
-
-		max-width: 250px;
-
-	}
-
 	&__img {
 
 		img {
 
-			left: 20px;
+
 
 		}
 
