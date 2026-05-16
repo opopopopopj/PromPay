@@ -1,29 +1,53 @@
 	<article class="faq">
 
-		<div class="center faq__box">
+		<div class="center">
 
-			<header class="faq__header">
-
-				<h2 class="faq__title h3">
-					Frequently Asked  Questions
-				</h2>
-
-			</header>
+			<h2 class="faq__title h2">
+				Частые вопросы
+			</h2>
 
 			<div class="accordion">
 
 {% for item in [
 	{
-		head : "How to apply for a PromPay card?",
-		text : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+		head : "Почему мы?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте <a href=\"https://t.me/paytao_bot\" rel=\"noopener nofollow\" target=\"_blank\">@paytao_bot</a>, а еще в Apple Pay и Google Pay</li></ul>"
 	},
 	{
-		head : "How to use my PromPay card for transactions?",
-		text : "Most modern cards require you to install a mobile app or at least a Telegram mini app. Unlike those, our Telegram bot does not collect any personal data — it has no access to your IP address, device information, phone number, or email.</p><p>We physically have no access to your personal information, and that’s the best guarantee that we’ll never share it with anyone. Our privacy-first policy allows us to operate without asking for anything from you — your Telegram account is all we need. This means your identity remains completely private, while you can still manage your card instantly, 24/7, from any device."
+		head : "Запрещенные операции",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
 	},
 	{
-		head : "Where can the PromPay card be used?",
-		text : "No worries — our <a class=\"link\" href=\"/contact-us/\">support team</a> is available 24/7.</p><p>If something isn’t working as expected, simply contact us through the app or Telegram bot. <br>We’ll respond quickly and help you get back to using your card with confidence."
+		head : "Как работает виртуальная карта?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
+	},
+	{
+		head : "Нужно ли уведомлять ФНС об открытии карты?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
+	},
+	{
+		head : "Безопасно ли пользоваться банковской картой, могут ли украсть мои данные?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
+	},
+	{
+		head : "Что можно оплачивать?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
+	},
+	{
+		head : "На меня открывается счет в иностранном банке?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
+	},
+	{
+		head : "Какое имя указывать при оплате?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
+	},
+	{
+		head : "Где узнать детали карты? (Срок действия, код, биллинговый адрес)",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
+	},
+	{
+		head : "Остались еще вопросы?",
+		text : "<ul><li>Моментальное пополнение по СБП</li><li>Возможность пополнения с кредитной карты</li><li>Выпуск всего за 2 минуты</li><li>Карта всегда у вас под рукой в ТГ Боте @paytao_bot, а еще в Apple Pay и Google Pay</li></ul>"
 	}
 ] %}
 
@@ -41,9 +65,7 @@
 
 						<div class="accordion__body-inner faq__text">
 
-							<p>
-								{{ item.text | safe }}
-							</p>
+							{{ item.text | safe }}
 
 						</div>
 
