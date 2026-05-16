@@ -1,0 +1,27 @@
+.tabs {
+
+	&__nav {
+
+		display: flex;
+
+	}
+
+	&__btn {
+
+		padding: 12px;
+
+		&.is-current {
+
+			color: #fff
+
+		}
+
+	}
+
+	&__body {
+
+		padding: var(--gap);
+
+	}
+
+}

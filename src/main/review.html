@@ -1,0 +1,113 @@
+	<article class="review">
+
+		<div class="center">
+
+			<h2 class="review__title h2">
+				Отзывы клиентов
+			</h2>
+
+			<div class="tabs">
+
+				<div class="tabs__nav">
+
+					<button class="button tabs__btn is-current" type="button">
+						Все отзывы
+					</button>
+
+					<button class="button tabs__btn" type="button">
+						Trustpilot 4.8
+					</button>
+
+					<button class="button tabs__btn" type="button">
+						Google 4.9
+					</button>
+
+				</div>
+
+				<div class="tabs__item">
+
+					<ul class="review__list">
+
+						<li class="review__item">
+
+							<p class="review__name">
+								{{ item.name }}
+							</p>
+
+							<p class="review__ratio">
+								{{ item.star }} звезд
+							</p>
+
+							<p class="review__text">
+								{{ item.text }}
+							</p>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+				<div class="tabs__item visuallyhidden">
+
+				</div>
+
+				<div class="tabs__item visuallyhidden">
+
+				</div>
+
+			</div>
+
+{% list in [
+	{
+		name : "",
+		star : 5,
+		text : ""
+	},
+	{
+		name : "",
+		star : 4,
+		text : ""
+	},
+	{
+		name : "",
+		star : 5,
+		text : ""
+	},
+	{
+		name : "",
+		star : 5,
+		text : ""
+	},
+	{
+		name : "",
+		star : 5,
+		text : ""
+	},
+	{
+		name : "",
+		star : 4,
+		text : ""
+	}
+] %}
+
+
+
+Алексей
+Daria
+Игорь
+Оплатил ChatGPT и пару зарубежных сервисов без лишних попыток. Карту пополнил через СБП, всё прошло быстро.
+Добавила карту в Apple Pay и пользовалась в поездке. Удобно, что не нужно каждый раз искать обходные способы оплаты.
+Пополнил карту в рублях, оплатил подписки и бронирование. Конвертация понятная, карта сразу готова к работе.
+
+Just Alex
+Ivan P.
+Алексей
+Нужна была виртуальная карта для онлайн-сервисов. Оформление заняло несколько минут, дальше просто пополнил и оплатил.
+Лорем виртуальная карта для онлайн-сервисов. Оформление заняло несколько минут, дальше просто пополнил и оплатил.
+Оплатил ChatGPT и пару зарубежных сервисов без лишних попыток. Карту пополнил через СБП, всё прошло быстро.
+
+
+		</div>
+
+	</article>
