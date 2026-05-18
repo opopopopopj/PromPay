@@ -1,37 +1,50 @@
 .faq {
 
-	margin: var(--margin) 0;
+	margin: var(--margin) 0 60px;
+	color: var(--second);
+
+	&__title {
+
+		text-align: center;
+		font-weight: 700;
+
+	}
 
 	&__head {
 
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 32px;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 40px;
 
 	}
 
 	&__text {
 
-		max-width: 1080px;
+		max-width: 1000px;
 		width: 94%;
 		text-wrap: pretty;
 
-		p + p {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 40px;
+		color: #0A2239CC;
 
-			margin-top: 10px;
+		ul li {
 
-		}
+			padding-left: 32px;
 
-		@media $mdWidth {
+			&::before {
 
-			font-size: 16px;
-			line-height: 24px;
+				position: absolute;
+				width: 7px;
+				height: 7px;
+				top: 20px;
+				left: 12px;
+				content: '';
+				border-radius: 50%;
+				background-color: currentColor;
 
-		}
-
-		@media $smWidth {
-
-			font-size: 14px;
+			}
 
 		}
 
