@@ -3,13 +3,10 @@
 	flex-shrink: 0;
 	position: relative;
 	color: #fff;
-	/* background-color: var(--secong); */
-	padding: 40px 0;
-	outline:1px solid red;
+	background-color: var(--second);
+	padding: 50px 0;
 
 	.center {
-
-		width: 1376px;
 
 		@media $mdWidth {
 
@@ -22,19 +19,19 @@
 	&__grid {
 
 		display: grid;
-		align-content: flex-start;
-		grid-template-areas: "logo menu social"
-							 "copyright menu social";
-		grid-template-columns: 280px 1fr auto;
-		margin: 10px 0;
 		gap: 40px;
+		align-content: flex-start;
+		justify-content: space-between;
+		grid-template-areas: "logo menu app"
+							 "copyright menu app"
+							 "social menu app";
+		grid-template-columns: 300px 500px 150px;
 
 		@media $smWidth {
 
 			grid-template-areas: "menu" "social" "logo" "copyright";
 			grid-template-columns: auto;
 			gap: 30px;
-			margin: 20px 0;
 
 		}
 
@@ -58,61 +55,50 @@
 
 		display: flex;
 		align-items: flex-start;
-		justify-content: center;
+		justify-content: space-between;
+
+		&-head {
+
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 32px;
+			text-transform: uppercase;
+			opacity: .4;
+			margin-bottom: 30px;
+
+		}
 
 		@media $mdWidth {
 
-			ul {
-
-				gap: 10px;
-
-			}
 
 		}
 
 		@media $smWidth {
 
-			justify-content: center;
-
-			ul {
-
-				gap: 20px;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				display: flex;
-				margin-bottom: 10px;
-				column-count: auto;
-
-			}
-
-			li {
-
-				padding: 0;
-
-			}
-
-		}
-
-		ul {
-
-			column-count: 3;
-			gap: 34px;
-
 		}
 
 		li {
 
-			padding-bottom: 30px;
-			white-space: nowrap;
-
-		}
-
-		a {
-
 			font-weight: 500;
 			font-size: 16px;
 			line-height: 32px;
+			margin-top: 16px;
+
+		}
+
+	}
+
+	&__app {
+
+		grid-area: app;
+		text-align: center;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 32px;
+
+		img {
+
+			margin-top: 16px;
 
 		}
 
