@@ -6,27 +6,82 @@
 				Отзывы клиентов
 			</h2>
 
+			<svg class="visuallyhidden">
+				<g id="review-star-svg">
+					<path d="m12 18.26-7.053 3.948 1.575-7.928L.588 8.792l8.027-.952L12 .5l3.385 7.34 8.027.952-5.934 5.488 1.575 7.928z"/>
+				</g>
+			</svg>
+
 			<div class="tabs">
 
-				<div class="tabs__nav">
+				<div class="review__nav">
 
-					<button class="button tabs__btn is-current" type="button">
-						Все отзывы
-					</button>
+					<div class="tabs__nav">
 
-					<button class="button tabs__btn" type="button">
-						Trustpilot 4.8
-					</button>
+						<button class="button tabs__btn is-current" type="button">
+							Все отзывы
+						</button>
 
-					<button class="button tabs__btn" type="button">
-						Google 4.9
-					</button>
+						<button class="button tabs__btn" type="button">
+							Trustpilot
+							<b>
+								<svg width="24" height="24">
+									<use xlink:href="#review-star-svg"/>
+								</svg>
+								4.8
+							</b>
+						</button>
+
+						<button class="button tabs__btn" type="button">
+							Google
+							<b>
+								<svg width="24" height="24">
+									<use xlink:href="#review-star-svg"/>
+								</svg>
+								4.9
+							</b>
+						</button>
+
+					</div>
 
 				</div>
 
 				<div class="tabs__item">
 
 					<ul class="review__list">
+
+{% for item in [
+	{
+		name : "Алексей",
+		star : 5,
+		text : "Оплатил ChatGPT и пару зарубежных сервисов без лишних попыток. Карту пополнил через СБП, всё прошло быстро."
+	},
+	{
+		name : "Daria",
+		star : 4,
+		text : "Добавила карту в Apple Pay и пользовалась в поездке. Удобно, что не нужно каждый раз искать обходные способы оплаты."
+	},
+	{
+		name : "Игорь",
+		star : 5,
+		text : "Пополнил карту в рублях, оплатил подписки и бронирование. Конвертация понятная, карта сразу готова к работе."
+	},
+	{
+		name : "Just Alex",
+		star : 5,
+		text : "Нужна была виртуальная карта для онлайн-сервисов. Оформление заняло несколько минут, дальше просто пополнил и оплатил."
+	},
+	{
+		name : "Ivan P.",
+		star : 5,
+		text : "Лорем виртуальная карта для онлайн-сервисов. Оформление заняло несколько минут, дальше просто пополнил и оплатил."
+	},
+	{
+		name : "Алексей",
+		star : 4,
+		text : "Оплатил ChatGPT и пару зарубежных сервисов без лишних попыток. Карту пополнил через СБП, всё прошло быстро."
+	}
+] %}
 
 						<li class="review__item">
 
@@ -35,7 +90,27 @@
 							</p>
 
 							<p class="review__ratio">
-								{{ item.star }} звезд
+								<svg width="152" height="24">
+									<use xlink:href="#review-star-svg"/>
+									<use xlink:href="#review-star-svg" x="32"/>
+									<use xlink:href="#review-star-svg" x="64"/>
+									{% if item.star > 3 %}
+									<use xlink:href="#review-star-svg" x="96"/>
+									{% endif %}
+									{% if item.star > 4 %}
+									<use xlink:href="#review-star-svg" x="128"/>
+									{% endif %}
+								</svg>
+								<span class="visuallyhidden">
+									{{ item.star }}
+									{% if item.star == 1 %}
+									  звезда
+									{% elif item.star > 1 and item.star < 5 %}
+									  звезды
+									{% else %}
+									  звезд
+									{% endif %}
+								</span>
 							</p>
 
 							<p class="review__text">
@@ -44,70 +119,21 @@
 
 						</li>
 
+{% endfor %}
+
 					</ul>
 
 				</div>
 
 				<div class="tabs__item visuallyhidden">
-
+					Trustpilot
 				</div>
 
 				<div class="tabs__item visuallyhidden">
-
+					Google
 				</div>
 
 			</div>
-
-{% list in [
-	{
-		name : "",
-		star : 5,
-		text : ""
-	},
-	{
-		name : "",
-		star : 4,
-		text : ""
-	},
-	{
-		name : "",
-		star : 5,
-		text : ""
-	},
-	{
-		name : "",
-		star : 5,
-		text : ""
-	},
-	{
-		name : "",
-		star : 5,
-		text : ""
-	},
-	{
-		name : "",
-		star : 4,
-		text : ""
-	}
-] %}
-
-
-
-Алексей
-Daria
-Игорь
-Оплатил ChatGPT и пару зарубежных сервисов без лишних попыток. Карту пополнил через СБП, всё прошло быстро.
-Добавила карту в Apple Pay и пользовалась в поездке. Удобно, что не нужно каждый раз искать обходные способы оплаты.
-Пополнил карту в рублях, оплатил подписки и бронирование. Конвертация понятная, карта сразу готова к работе.
-
-Just Alex
-Ivan P.
-Алексей
-Нужна была виртуальная карта для онлайн-сервисов. Оформление заняло несколько минут, дальше просто пополнил и оплатил.
-Лорем виртуальная карта для онлайн-сервисов. Оформление заняло несколько минут, дальше просто пополнил и оплатил.
-Оплатил ChatGPT и пару зарубежных сервисов без лишних попыток. Карту пополнил через СБП, всё прошло быстро.
-
-{% endfor %}
 
 		</div>
 

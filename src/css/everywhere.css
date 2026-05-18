@@ -5,7 +5,7 @@
 	&__title {
 
 		text-align: center;
-		color: var(--secund);
+		color: var(--second);
 		margin-bottom: var(--gap);
 
 		b {
@@ -19,7 +19,7 @@
 	&__text {
 
 		text-align: center;
-		color: var(--secund);
+		color: var(--second);
 
 		font-weight: 500;
 		font-size: 24px;

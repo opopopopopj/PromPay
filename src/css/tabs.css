@@ -2,25 +2,47 @@
 
 	&__nav {
 
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(3, minmax(200px, 1fr));
+		padding: 8px;
+		gap: 16px;
+		background-color: rgba(10, 34, 57, 0.12);
+		border-radius: 20px;
 
 	}
 
 	&__btn {
 
-		padding: 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 8px 16px;
+		gap: 12px;
+		height: 40px;
+		border-radius: 10px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
 
-		&.is-current {
+		b {
 
-			color: #fff
+			display: flex;
+			gap: 4px;
 
 		}
 
-	}
+		svg {
 
-	&__body {
+			color: #ffba08;
 
-		padding: var(--gap);
+		}
+
+		&.is-current {
+
+			color: #fff;
+			background-color: var(--second);
+
+		}
 
 	}
 

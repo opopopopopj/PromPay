@@ -1,7 +1,61 @@
 .promo {
 
 	margin: var(--margin) 0;
-	color: var(--secund);
+	color: var(--second);
 
+	&__box {
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 32px;
+
+	}
+
+	&__item {
+
+		position: relative;
+
+	}
+
+	&__img {
+
+		img {
+
+			object-fit: cover;
+			border-radius: 30px;
+
+		}
+
+	}
+
+	&__content {
+
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		bottom: 30px;
+		color: #fff;
+		max-width: 340px;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 32px;
+
+	}
+
+	&__btn {
+
+		display: flex;
+		margin-top: auto;
+
+		.btn {
+
+			min-width: 250px;
+
+		}
+
+	}
 
 }

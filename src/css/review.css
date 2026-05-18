@@ -1,6 +1,54 @@
 .review {
 
 	margin: var(--margin) 0;
-	color: var(--secund);
+	color: var(--second);
+
+	&__title {
+
+		text-align: center;
+		font-weight: 700;
+
+	}
+
+	&__nav {
+
+		display: flex;
+		justify-content: center;
+		margin: 32px 0;
+
+	}
+
+	&__list {
+
+		margin-top: 32px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 32px;
+
+	}
+
+	&__item {
+
+		background-color: #fff;
+		border-radius: 30px;
+		font-weight: 500;
+		padding: 30px;
+
+	}
+
+	&__name {
+
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 32px;
+
+	}
+
+	&__ratio {
+
+		margin: 12px 0;
+		color: #ffba08;
+
+	}
 
 }
