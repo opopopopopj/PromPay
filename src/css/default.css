@@ -37,8 +37,8 @@ body {
 	flex-direction: column;
 	position: relative;
 	background-color: var(--bg);
- /*background-image: url(/css/1.png);*/
-background-position: center 18px;
+ /* background-image: url(/css/1.png); */
+background-position: center 0px;
 }
 
 a {

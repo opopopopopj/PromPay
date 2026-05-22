@@ -14,7 +14,7 @@
 
 		border-radius: 30px;
 		padding: 30px;
-		margin: 32px 8px;
+		margin: 32px 0;
 		text-align: center;
 		background-color: var(--color);
 		display: grid;
@@ -44,6 +44,13 @@
 			font-size: 50px;
 			line-height: 60px;
 
+			@media $mdWidth {
+
+				font-size: 40px;
+				line-height: 50px;
+
+			}
+
 		}
 
 
@@ -56,6 +63,14 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 32px;
 		margin-top: 60px;
+
+		@media $mdWidth {
+
+			grid-template-columns: 1fr 1fr;
+			margin-top: 32px;
+			gap: 24px 32px;
+
+		}
 
 	}
 
@@ -75,6 +90,12 @@
 		position: relative;
 		height: 100px;
 
+		@media $mdWidth {
+
+			height: 98px;
+
+		}
+
 		& > img {
 
 			position: absolute;
@@ -82,6 +103,7 @@
 			right: 0;
 			bottom: 0;
 			margin: auto;
+			max-width: 100%;
 
 		}
 

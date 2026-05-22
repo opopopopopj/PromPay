@@ -17,6 +17,12 @@
 		font-weight: 500;
 		font-size: 24px;
 
+		@media $mdWidth {
+
+			font-size: 20px;
+
+		}
+
 		b {
 
 			color: #8D0101;
@@ -33,13 +39,35 @@
 		position: relative;
 		background-color: #FAEFED;
 
+		@media $mdWidth {
+
+			padding: 40px;
+
+		}
+
 	}
 
 	&__table {
 
 		font-weight: 500;
 		font-size: 24px;
+		position: relative;
 		line-height: 40px;
+		z-index: 1;
+
+		@media $mdWidth {
+
+			width: 100%;
+
+			td {
+
+				width: 0;
+				padding-right: 0;
+				white-space: nowrap;
+
+			}
+
+		}
 
 		th, td {
 
@@ -85,6 +113,19 @@
 		display: flex;
 		margin-top: 30px;
 
+		@media $mdWidth {
+
+			margin-top: 16px;
+			justify-content: center;
+
+			.btn {
+
+				min-width: 300px;
+
+			}
+
+		}
+
 	}
 
 	&__bg {
@@ -103,6 +144,12 @@
 		position: absolute;
 		right: 32px;
 		bottom: 0;
+
+		@media $mdWidth {
+
+			display: none;
+
+		}
 
 	}
 

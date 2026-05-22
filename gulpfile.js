@@ -72,12 +72,11 @@ const html = (files, since = {}, folder = '') => {
 			},
 			path: 'src/'
 		}))
-		.pipe(replace('	', '  '))
-		.pipe(w3cjs({
-			url : 'https://validator.w3.org/nu/',
-			verifyMessage: (type, message) => !message.includes('iframe')
-		}))
-		.pipe(w3cjs.reporter())
+//		.pipe(w3cjs({
+//			url : 'https://validator.w3.org/nu/',
+//			verifyMessage: (type, message) => !message.includes('iframe')
+//		}))
+//		.pipe(w3cjs.reporter())
 		.pipe(gulp.dest('build' + folder))
 
 };

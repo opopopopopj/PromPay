@@ -5,9 +5,15 @@
 	&__box {
 
 		padding: 70px 80px;
-		background-image: linear-gradient(111.46deg, #2C2C2C, #191919);
+		 background-image: linear-gradient(111.46deg, #2C2C2C, #191919);
 		border-radius: 30px;
 		color: #fff;
+
+		@media $mdWidth {
+
+			padding: 50px 40px;
+
+		}
 
 	}
 
@@ -56,10 +62,31 @@
 		justify-content: space-between;
 		margin-top: 56px;
 
+		@media $mdWidth {
+
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 80px;
+
+		}
+
 		li {
 
 			display: flex;
 			gap: 16px;
+
+			@media $mdWidth {
+
+				display: block;
+				font-size: 15px;
+
+				b {
+
+					font-size: 18px;
+					margin: 16px 0 10px;
+
+				}
+
+			}
 
 		}
 
@@ -93,7 +120,13 @@
 
 		img {
 
+			@media $mdWidth {
 
+				width: auto;
+				height: 180px;
+				margin-right: -10px;
+
+			}
 
 		}
 

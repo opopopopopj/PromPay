@@ -12,6 +12,18 @@
 		border-radius: 30px;
 		color: #fff;
 
+		@media $mdWidth {
+
+			padding: 70px 50px;
+
+		}
+
+		@media $smWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	&__content {
@@ -51,6 +63,12 @@
 		justify-content: space-between;
 		margin: 56px 0;
 
+		@media $mdWidth {
+
+			font-size: 15px;
+
+		}
+
 		svg {
 
 			margin-bottom: 10px;
@@ -65,13 +83,41 @@
 
 		max-width: 250px;
 
+		@media $smWidth {
+
+			margin: 24px auto;
+
+		}
+
 	}
 
 	&__img {
 
+		@media $smWidth {
+
+			display: flex;
+			justify-content: center;
+
+			img {
+
+				left: 0;
+				width: 253px;
+				height: 304px;
+
+			}
+
+		}
+
 		img {
 
 			left: 20px;
+
+			@media $mdWidth {
+
+				height: 470px;
+				width: auto;
+
+			}
 
 		}
 

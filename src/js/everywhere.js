@@ -3,6 +3,8 @@
 	if(everywhere) {
 
 		const btn = everywhere.querySelector('.everywhere__btn .btn'),
+			  listBox = everywhere.querySelector('.everywhere__list'),
+			  lists = [...listBox.querySelectorAll('ul')],
 			  textDefault = btn.textContent,
 			  textShowAll = btn.dataset.alt;
 
@@ -13,6 +15,74 @@
 			everywhere.classList.toggle('is-showall');
 
 		});
+
+		let resizeTimeout,
+			windowWidthOLd = window.innerWidth;
+
+		const originalHTML = listBox.innerHTML;
+
+		function regroupEverywhereList() {
+
+console.log(windowWidthOLd)
+			if (windowWidthOLd >= 1024) {
+
+				listBox.innerHTML = originalHTML;
+
+				return;
+
+			}
+
+			const items = [...listBox.querySelectorAll('li')];
+
+			listBox.innerHTML = '';
+
+			const pattern = [6, 5];
+
+			let index = 0;
+			let ulIndex = 0;
+
+			while (index < items.length) {
+
+				const ul = document.createElement('ul');
+				const limit = pattern[ulIndex % 2];
+
+				for (let i = 0; i < limit && index < items.length; i++) {
+					ul.append(items[index]);
+					index++;
+				}
+
+				listBox.append(ul);
+				ulIndex++;
+			}
+
+		}
+
+		regroupEverywhereList();
+
+		window.addEventListener("resize", () => {
+
+			window.requestAnimationFrame( () => {
+
+				clearTimeout(resizeTimeout);
+
+				resizeTimeout = setTimeout( () => {
+
+					resizeTimeout = null;
+
+					if(windowWidthOLd !== window.innerWidth) {
+
+						windowWidthOLd = window.innerWidth;
+
+						regroupEverywhereList();
+
+					}
+
+				}, 1000);
+
+			});
+
+		});
+
 
 	}
 

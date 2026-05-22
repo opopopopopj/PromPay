@@ -16,6 +16,12 @@
 		justify-content: center;
 		margin: 32px 0;
 
+		@media $mdWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	&__list {
@@ -24,6 +30,12 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 32px;
+
+		@media $mdWidth {
+
+			grid-template-columns: 1fr 1fr;
+
+		}
 
 	}
 

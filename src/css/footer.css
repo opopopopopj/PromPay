@@ -27,6 +27,12 @@
 							 "social menu app";
 		grid-template-columns: 300px 500px 150px;
 
+		@media $mdWidth {
+
+			grid-template-columns: 274px 450px 110px;
+
+		}
+
 		@media $smWidth {
 
 			grid-template-areas: "menu" "social" "logo" "copyright";
@@ -66,6 +72,13 @@
 			opacity: .4;
 			margin-bottom: 30px;
 
+			@media $mdWidth {
+
+				font-size: 14px;
+				margin-bottom: 16px;
+
+			}
+
 		}
 
 		@media $mdWidth {
@@ -84,6 +97,12 @@
 			line-height: 32px;
 			margin-top: 16px;
 
+			@media $mdWidth {
+
+				font-size: 14px;
+
+			}
+
 		}
 
 	}
@@ -99,6 +118,15 @@
 		img {
 
 			margin-top: 16px;
+			max-width: 100%;
+			height: auto;
+
+		}
+
+		@media $mdWidth {
+
+			font-size: 14px;
+			line-height: 24px;
 
 		}
 
@@ -139,11 +167,8 @@
 
 		@media $mdWidth {
 
-			p {
-
-				max-width: 376px;
-
-			}
+			font-weight: 600;
+			font-size: 11px;
 
 		}
 

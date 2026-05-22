@@ -6,12 +6,19 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 20px var(--gap);
 
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
 	}
 
 	&__item {
-
-		background-color: #fff;
+outline:1px solid red;
+		/*background-color: #fff;*/
 		border-radius: 30px;
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 
@@ -40,6 +47,28 @@
 
 				padding-right: 0;
 
+				@media $mdWidth {
+
+					max-width: 300px;
+
+					.features__text {
+
+						font-size: 16px;
+
+					}
+
+				}
+
+			}
+
+			img {
+
+				width: auto;
+				height: auto;
+				position: absolute;
+				top: 0;
+				right: 0;
+
 			}
 
 		}
@@ -58,6 +87,12 @@
 		font-weight: 700;
 		font-size: 28px;
 		line-height: 40px;
+
+		@media $mdWidth {
+
+			font-size: 22px;
+
+		}
 
 	}
 

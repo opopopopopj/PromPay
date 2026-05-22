@@ -32,6 +32,6 @@
 
 $desktop: (min-width: 1250px);
 $lgWidth: (max-width: 1336px);
-$mdWidth: (max-width: 1000px);
-$smWidth: (max-width: 740px);
+$mdWidth: (max-width: 1249px);
+$smWidth: (max-width: 1023px);
 $xsWidth: (max-width: 374px);

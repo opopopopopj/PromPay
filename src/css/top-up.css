@@ -26,6 +26,12 @@
 		align-items: flex-end;
 		background-color: #FAEFED;
 
+		@media $mdWidth {
+
+			padding: 40px;
+
+		}
+
 	}
 
 	&__content {
@@ -41,11 +47,30 @@
 		gap: 56px 24px;
 		margin-top: 56px;
 
+		@media $mdWidth {
+
+			margin-top: 32px;
+			gap: 32px 24px;
+
+		}
+
 		li {
 
 			display: flex;
 			gap: 16px;
 			color: rgba(10, 34, 57, 0.8);
+
+			@media $mdWidth {
+
+				display: block;
+
+				img {
+
+					margin-bottom: 16px;
+
+				}
+
+			}
 
 		}
 
@@ -70,6 +95,21 @@
 			display: block;
 			font-size: 16px;
 			opacity: .8;
+
+		}
+
+	}
+
+	&__img {
+
+		@media $mdWidth {
+
+			img {
+
+				width: auto;
+				height: auto;
+
+			}
 
 		}
 
