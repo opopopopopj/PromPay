@@ -8,7 +8,7 @@
 		justify-content: space-between;
 		padding: 148px 0 100px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			padding-bottom: 150px;
 
@@ -26,7 +26,7 @@
 
 		width: 640px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			width: 510px;
 
@@ -62,7 +62,7 @@
 		gap: var(--gap);
 		align-items: center;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			gap: 16px;
 			font-size: 22px;
@@ -83,7 +83,7 @@
 		margin: 49px 0 45px;
 		max-width: 400px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			margin-bottom: 42px;
 
@@ -116,7 +116,7 @@
 
 			margin: auto;
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				width: 192px;
 				height: 68px;
@@ -161,7 +161,7 @@
 		bottom: 0;
 		margin: auto;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			width: 208px;
 			height: 208px;
@@ -177,7 +177,7 @@
 		top: 11px;
 		left: -7px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			width: 207px;
 			height: auto;
@@ -192,7 +192,7 @@
 		left: 53px;
 		z-index: 1;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			width: 205px;
 			height: auto;

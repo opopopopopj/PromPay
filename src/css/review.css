@@ -16,7 +16,7 @@
 		justify-content: center;
 		margin: 32px 0;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			display: block;
 
@@ -31,7 +31,7 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 32px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			grid-template-columns: 1fr 1fr;
 

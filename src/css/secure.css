@@ -12,7 +12,7 @@
 		border-radius: 30px;
 		color: #fff;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			padding: 70px 50px;
 
@@ -50,7 +50,7 @@
 		line-height: 32px;
 		max-width: 520px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 
 		}
@@ -63,7 +63,7 @@
 		justify-content: space-between;
 		margin: 56px 0;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			font-size: 15px;
 
@@ -112,7 +112,7 @@
 
 			left: 20px;
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				height: 470px;
 				width: auto;

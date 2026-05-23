@@ -17,7 +17,7 @@
 		font-weight: 500;
 		font-size: 24px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			font-size: 20px;
 
@@ -39,7 +39,7 @@
 		position: relative;
 		background-color: #FAEFED;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			padding: 40px;
 
@@ -55,7 +55,7 @@
 		line-height: 40px;
 		z-index: 1;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			width: 100%;
 
@@ -113,7 +113,7 @@
 		display: flex;
 		margin-top: 30px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			margin-top: 16px;
 			justify-content: center;
@@ -145,7 +145,7 @@
 		right: 32px;
 		bottom: 0;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			display: none;
 

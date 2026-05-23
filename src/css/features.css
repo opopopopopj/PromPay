@@ -47,7 +47,7 @@ outline:1px solid red;
 
 				padding-right: 0;
 
-				@media $mdWidth {
+				@media $lgWidth {
 
 					max-width: 300px;
 
@@ -88,7 +88,7 @@ outline:1px solid red;
 		font-size: 28px;
 		line-height: 40px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			font-size: 22px;
 

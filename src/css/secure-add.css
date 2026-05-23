@@ -9,7 +9,7 @@
 		border-radius: 30px;
 		color: #fff;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			padding: 50px 40px;
 
@@ -48,7 +48,7 @@
 		line-height: 32px;
 		max-width: 520px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 
 		}
@@ -62,7 +62,7 @@
 		justify-content: space-between;
 		margin-top: 56px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			grid-template-columns: 1fr 1fr 1fr;
 			gap: 80px;
@@ -74,7 +74,7 @@
 			display: flex;
 			gap: 16px;
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				display: block;
 				font-size: 15px;
@@ -120,7 +120,7 @@
 
 		img {
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				width: auto;
 				height: 180px;

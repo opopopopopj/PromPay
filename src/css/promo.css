@@ -9,7 +9,7 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 32px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			grid-template-columns: 1fr;
 
@@ -90,7 +90,7 @@
 
 	.promo-partners {
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			.promo__img {
 

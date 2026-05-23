@@ -6,7 +6,7 @@
 	font-size: 70px;
 	line-height: 80px;
 
-	@media $mdWidth {
+	@media $lgWidth {
 
 		font-size: 56px;
 
@@ -30,7 +30,7 @@
 	font-size: 48px;
 	line-height: 56px;
 
-	@media $mdWidth {
+	@media $lgWidth {
 
 		font-size: 40px;
 		line-height: 48px;

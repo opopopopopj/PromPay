@@ -3,7 +3,7 @@
 	margin: 100px auto;
 	max-width: 728px;
 
-	@media $mdWidth {
+	@media $lgWidth {
 
 		max-width: 100%;
 

@@ -26,7 +26,7 @@
 		align-items: flex-end;
 		background-color: #FAEFED;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			padding: 40px;
 
@@ -47,7 +47,7 @@
 		gap: 56px 24px;
 		margin-top: 56px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			margin-top: 32px;
 			gap: 32px 24px;
@@ -60,7 +60,7 @@
 			gap: 16px;
 			color: rgba(10, 34, 57, 0.8);
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				display: block;
 
@@ -102,7 +102,7 @@
 
 	&__img {
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			img {
 

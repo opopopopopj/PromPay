@@ -25,13 +25,28 @@
 
 }
 
-@media $mdWidth {
+@media $lgWidth {
 
 	:root {
 
 		--indent: 40px;
 		--gap: 24px;
 		--margin: 80px;
+
+	}
+
+	.center {
+
+		width: 1024px;
+
+	}
+
+}
+
+@media $lgWidth {
+
+	:root {
+
 
 	}
 
@@ -49,7 +64,7 @@
 
 	.center {
 
-		width: 1024px;
+		width: 744px;
 
 	}
 
@@ -76,7 +91,7 @@
 
 	.center {
 
-		width: 744px;
+		width: 424px;
 
 	}
 

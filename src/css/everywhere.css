@@ -33,7 +33,7 @@
 
 		}
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			font-size: 20px;
 
@@ -78,7 +78,7 @@
 			gap: 48px;
 			justify-content: space-between;
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				gap: 20px;
 
@@ -101,7 +101,7 @@
 				margin: 48px auto;
 				max-width: calc( 100% - 180px );
 
-				@media $mdWidth {
+				@media $lgWidth {
 
 					margin: 32px auto;
 					max-width: calc( 100% - 60px );
@@ -133,7 +133,7 @@
 		justify-content: center;
 		margin-top: 48px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			margin-top: 40px;
 

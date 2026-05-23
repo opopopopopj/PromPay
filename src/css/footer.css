@@ -8,7 +8,7 @@
 
 	.center {
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			width: 100%;
 
@@ -27,7 +27,7 @@
 							 "social menu app";
 		grid-template-columns: 300px 500px 150px;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			grid-template-columns: 274px 450px 110px;
 
@@ -35,7 +35,10 @@
 
 		@media $smWidth {
 
-			grid-template-areas: "menu" "social" "logo" "copyright";
+			grid-template-areas: "logo app"
+								 "copyright app"
+								 "social app"
+								 "menu menu";
 			grid-template-columns: auto;
 			gap: 30px;
 
@@ -46,12 +49,6 @@
 	&__logo {
 
 		grid-area: logo;
-
-		@media $smWidth {
-
-			justify-content: center;
-
-		}
 
 	}
 
@@ -72,7 +69,7 @@
 			opacity: .4;
 			margin-bottom: 30px;
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				font-size: 14px;
 				margin-bottom: 16px;
@@ -81,7 +78,7 @@
 
 		}
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 
 		}
@@ -97,7 +94,7 @@
 			line-height: 32px;
 			margin-top: 16px;
 
-			@media $mdWidth {
+			@media $lgWidth {
 
 				font-size: 14px;
 
@@ -121,12 +118,26 @@
 			max-width: 100%;
 			height: auto;
 
+
 		}
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			font-size: 14px;
 			line-height: 24px;
+
+		}
+
+		@media $smWidth {
+
+			display: flex;
+			justify-content: flex-end;
+
+			&-inner {
+
+				width: 110px;
+
+			}
 
 		}
 
@@ -137,12 +148,6 @@
 		grid-area: social;
 		display: flex;
 		gap: 20px;
-
-		@media $smWidth {
-
-			justify-content: center;
-
-		}
 
 		svg {
 
@@ -165,7 +170,7 @@
 		line-height: 20px;
 		text-wrap: pretty;
 
-		@media $mdWidth {
+		@media $lgWidth {
 
 			font-weight: 600;
 			font-size: 11px;
@@ -174,8 +179,11 @@
 
 		@media $smWidth {
 
-			text-align: center;
-			justify-content: center;
+			p {
+
+				max-width: 274px;
+
+			}
 
 		}
 
