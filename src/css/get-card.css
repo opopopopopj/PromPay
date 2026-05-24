@@ -45,6 +45,12 @@
 
 		}
 
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
 	}
 
 	&__img {
@@ -67,6 +73,12 @@
 				height: auto;
 
 			}
+
+		}
+
+		@media $smWidth {
+
+			border-radius: 30px 30px 0 0;
 
 		}
 

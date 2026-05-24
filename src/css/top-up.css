@@ -32,6 +32,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			display: block;
+
+		}
+
 	}
 
 	&__content {
@@ -54,6 +60,12 @@
 
 		}
 
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
 		li {
 
 			display: flex;
@@ -69,6 +81,12 @@
 					margin-bottom: 16px;
 
 				}
+
+			}
+
+			@media $smWidth {
+
+				display: flex;
 
 			}
 
@@ -110,6 +128,13 @@
 				height: auto;
 
 			}
+
+		}
+
+		@media $mdWidth {
+
+			display: flex;
+			justify-content: center;
 
 		}
 

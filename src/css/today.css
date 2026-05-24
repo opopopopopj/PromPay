@@ -22,6 +22,12 @@
 
 		color: #fff;
 
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
 		&-item {
 
 			flex-direction: column-reverse;
@@ -69,6 +75,12 @@
 			grid-template-columns: 1fr 1fr;
 			margin-top: 32px;
 			gap: 24px 32px;
+
+		}
+
+		@media $mdWidth {
+
+			grid-template-columns: 1fr;
 
 		}
 

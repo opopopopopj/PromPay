@@ -14,9 +14,11 @@
 
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			display: block;
+			margin: auto;
+			max-width: 510px;
 
 		}
 
@@ -29,6 +31,7 @@
 		@media $lgWidth {
 
 			width: 510px;
+			max-width: 100%;
 
 		}
 
@@ -45,7 +48,7 @@
 
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			text-align: center;
 
@@ -89,7 +92,7 @@
 
 		}
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			max-width: 100%;
 
@@ -106,7 +109,7 @@
 		gap: 16px;
 		max-width: 400px;
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			max-width: 100%;
 

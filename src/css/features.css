@@ -6,7 +6,7 @@
 		grid-template-columns: 1fr 1fr;
 		gap: 20px var(--gap);
 
-		@media $smWidth {
+		@media $mdWidth {
 
 			grid-template-columns: 1fr;
 
@@ -22,6 +22,12 @@ outline:1px solid red;
 		display: flex;
 		justify-content: space-between;
 
+		@media $smWidth {
+
+			display: block;
+
+		}
+
 		&--release {
 
 			grid-row: 2 span;
@@ -36,6 +42,9 @@ outline:1px solid red;
 			img {
 
 				max-width: 100%;
+				object-fit:cover;
+				object-position: top;
+				border-radius: 0 30px 30px 0;
 
 			}
 
@@ -46,10 +55,11 @@ outline:1px solid red;
 			.features__content {
 
 				padding-right: 0;
+				min-width: 380px;
 
 				@media $lgWidth {
 
-					max-width: 300px;
+					min-width: 300px;
 
 					.features__text {
 
@@ -61,16 +71,6 @@ outline:1px solid red;
 
 			}
 
-			img {
-
-				width: auto;
-				height: auto;
-				position: absolute;
-				top: 0;
-				right: 0;
-
-			}
-
 		}
 
 	}
@@ -78,6 +78,29 @@ outline:1px solid red;
 	&__content {
 
 		padding: 30px;
+
+	}
+
+	&__img {
+
+		width: 230px;
+		height: 198px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@media $lgWidth {
+
+			outline:1px solid red;
+			width: 160px;
+
+		}
+
+		@media $smWidth {
+
+			width: 100%;
+
+		}
 
 	}
 

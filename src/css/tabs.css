@@ -9,6 +9,15 @@
 		background-color: rgba(10, 34, 57, 0.12);
 		border-radius: 20px;
 
+		@media $smWidth {
+
+			grid-template-columns: repeat(3, auto);
+			gap: 0;
+			padding: 0;
+			border-radius: 10px;
+
+		}
+
 	}
 
 	&__btn {
@@ -28,6 +37,12 @@
 
 			display: flex;
 			gap: 4px;
+
+			@media $smWidth {
+
+				display: none;
+
+			}
 
 		}
 

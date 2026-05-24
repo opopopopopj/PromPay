@@ -69,6 +69,18 @@
 
 		}
 
+		@media $smWidth {
+
+			table, tbody, tr, th, td {
+
+				display: block;
+				padding: 0;
+				white-space: normal;
+
+			}
+
+		}
+
 		th, td {
 
 			padding-bottom: 16px;

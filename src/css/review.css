@@ -37,6 +37,12 @@
 
 		}
 
+		@media $smWidth {
+
+			grid-template-columns: 1fr;
+
+		}
+
 	}
 
 	&__item {

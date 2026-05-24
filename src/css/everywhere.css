@@ -1,6 +1,7 @@
 .everywhere {
 
 	margin: var(--margin) 0;
+	overflow: hidden;
 
 	&__title {
 
@@ -47,16 +48,13 @@
 
 		@media $smWidth {
 
-/*			gap: 16px 12px;
-			display: flex;
-			flex-wrap: wrap;
+			img {
 
-			ul {
-
-				display: contents;
+				width: 100%;
+				height: auto;
 
 			}
-*/
+
 		}
 
 		&::after {
@@ -84,7 +82,7 @@
 
 			}
 
-			@media $smWidth {
+			@media $mdWidth {
 
 				gap: 12px;
 
@@ -93,6 +91,12 @@
 					justify-content: center;
 
 				}
+
+			}
+
+			@media $smWidth {
+
+				gap: 10px;
 
 			}
 
@@ -108,12 +112,21 @@
 
 				}
 
-				@media $smWidth {
+				@media $mdWidth {
 
 					margin: 16px auto;
 					max-width: calc( 100% - 100px );
 
 				}
+
+				@media $smWidth {
+
+					margin: 16px auto;
+					max-width: calc( 100% - 50px );
+
+				}
+
+
 
 			}
 
