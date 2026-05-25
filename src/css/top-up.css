@@ -7,12 +7,24 @@
 
 		margin-bottom: 20px;
 
+		@media $mdWidth {
+
+			margin-bottom: 16px;
+
+		}
+
 	}
 
 	&__intro {
 
 		font-size: 20px;
 		line-height: 32px;
+
+		@media $mdWidth {
+
+			font-size: 18px;
+
+		}
 
 	}
 
@@ -24,7 +36,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		background-color: #FAEFED;
+		 background-color: #FAEFED;
 
 		@media $lgWidth {
 
@@ -34,6 +46,7 @@
 
 		@media $mdWidth {
 
+			padding: 30px;
 			display: block;
 
 		}
@@ -135,6 +148,14 @@
 
 			display: flex;
 			justify-content: center;
+			margin-top: 28px;
+
+			img {
+
+				width: 282px;
+				height: 378px;
+
+			}
 
 		}
 

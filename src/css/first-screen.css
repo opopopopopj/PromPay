@@ -19,6 +19,7 @@
 			display: block;
 			margin: auto;
 			max-width: 510px;
+			padding: 95px 0 61px;
 
 		}
 
@@ -95,6 +96,7 @@
 		@media $mdWidth {
 
 			max-width: 100%;
+			margin: 40px 0 30px;
 
 		}
 
@@ -173,6 +175,15 @@
 
 		}
 
+		@media $mdWidth {
+
+			width: 224px;
+			height: 224px;
+			top: 46px;
+			left: -68px;
+
+		}
+
 	}
 
 	&__terminal {
@@ -185,6 +196,13 @@
 			width: 207px;
 			height: auto;
 			left: 2px;
+
+		}
+
+		@media $mdWidth {
+
+			top: 20px;
+			left: -56px;
 
 		}
 
@@ -201,6 +219,14 @@
 			height: auto;
 			left: 80px;
 			top: 48px;
+
+		}
+
+		@media $mdWidth {
+
+			left: 0;
+			top: 67px;
+
 
 		}
 

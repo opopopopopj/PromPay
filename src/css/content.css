@@ -12,8 +12,9 @@
 
 	}
 
-	@media $smWidth {
+	@media $mdWidth {
 
+		line-height: 64px;
 
 	}
 
@@ -33,6 +34,13 @@
 	@media $lgWidth {
 
 		font-size: 40px;
+		line-height: 48px;
+
+	}
+
+	@media $mdWidth {
+
+		font-size: 36px;
 		line-height: 48px;
 
 	}

@@ -1,28 +1,27 @@
 ( btn => {
 
-	let windowScroll = null;
+	if ( btn ) {
 
-	btn.addEventListener('click', () => {
+		const menu = document.querySelector('.header__menu-list');
 
-		if ( document.body.classList.contains('menu-show') ) {
+		btn.addEventListener('click', () => {
 
-			document.body.classList.remove('menu-show');
-			document.documentElement.classList.remove('scroll-behavior-off');
+			menu.classList.toggle('is-open');
 
-		}
-		else {
+		});
 
-			windowScroll = window.pageYOffset;
+		window.addEventListener("click", event => {
 
-			window.requestAnimationFrame( () => {
+			if ( event.detail > 1 || event.target.closest('.header__menu') ) {
 
-				document.body.classList.add('menu-show');
-				document.documentElement.classList.add('scroll-behavior-off');
+				return;
 
-			});
+			}
 
-		}
+			menu.classList.remove('is-open');
 
-	});
+		});
+
+	}
 
 })(document.querySelector('.btn-menu-toggle'));

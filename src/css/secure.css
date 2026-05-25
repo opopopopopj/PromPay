@@ -21,6 +21,7 @@
 		@media $mdWidth {
 
 			display: block;
+			padding: 30px;
 
 		}
 
@@ -35,6 +36,12 @@
 	&__title {
 
 		margin-bottom: 20px;
+
+		@media $mdWidth {
+
+			margin-bottom: 16px;
+
+		}
 
 		@media $smWidth {
 
@@ -56,6 +63,13 @@
 		line-height: 32px;
 		max-width: 520px;
 
+		@media $mdWidth {
+
+			font-size: 18px;
+			max-width: 100%;
+
+		}
+
 		@media $smWidth {
 
 			text-align: center;
@@ -73,6 +87,14 @@
 		@media $lgWidth {
 
 			font-size: 15px;
+
+		}
+
+		@media $mdWidth {
+
+			font-size: 14px;
+			line-height: 24px;
+			margin: 40px 0;
 
 		}
 
@@ -104,7 +126,8 @@
 
 		@media $mdWidth {
 
-			margin: 24px auto;
+			margin: 24px auto 56px;
+			max-width: 300px;
 
 		}
 

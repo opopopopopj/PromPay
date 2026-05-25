@@ -23,7 +23,6 @@
 
 		function regroupEverywhereList() {
 
-console.log(windowWidthOLd)
 			if (windowWidthOLd >= 1024) {
 
 				listBox.innerHTML = originalHTML;

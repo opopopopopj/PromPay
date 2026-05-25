@@ -9,6 +9,12 @@
 		color: var(--second);
 		margin-bottom: var(--gap);
 
+		@media $mdWidth {
+
+			margin-bottom: 16px;
+
+		}
+
 		b {
 
 			color: #8D0101;
@@ -37,6 +43,12 @@
 		@media $lgWidth {
 
 			font-size: 20px;
+
+		}
+
+		@media $mdWidth {
+
+			font-size: 18px;
 
 		}
 
@@ -115,7 +127,7 @@
 				@media $mdWidth {
 
 					margin: 16px auto;
-					max-width: calc( 100% - 100px );
+					max-width: calc( 100% - 60px );
 
 				}
 

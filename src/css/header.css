@@ -20,19 +20,22 @@
 	&__grid {
 
 		display: grid;
-		gap: 10px;
+		gap: var(--gap);
 		align-items: center;
-		grid-template-areas: "logo menu btns";
-		grid-template-columns: auto 1fr auto;
+		grid-template-areas: "logo menu lang btn";
+		grid-template-columns: auto 1fr auto auto;
 
 		@media $lgWidth {
 
-			grid-template-areas: "logo btn-menu btns";
+			grid-template-areas: "logo lang menu btn";
+			grid-template-columns: 1fr auto auto auto;
 
 		}
 
 		@media $smWidth {
 
+			grid-template-areas: "logo lang menu";
+			grid-template-columns: 1fr auto auto;
 
 		}
 
@@ -48,14 +51,9 @@
 	&__menu {
 
 		grid-area: menu;
+		position: relative;
 
-		@media $lgWidth {
-
-			display: none;
-
-		}
-
-		ul {
+		&-list {
 
 			display: flex;
 			justify-content: center;
@@ -63,7 +61,37 @@
 
 			@media $lgWidth {
 
-				display: block;
+				display: grid;
+				padding: 12px 24px;
+				gap: 12px;
+
+				position: absolute;
+				left: 50%;
+				top: 58px;
+				transform: translateX(-50%);
+
+				background-color: #FBF9F9;
+				border: 1px solid rgba(10, 34, 57, 0.06);
+				box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.06);
+				border-radius: 20px;
+
+				white-space: nowrap;
+				text-align: center;
+				font-weight: 500;
+
+				&:not(.is-open) {
+
+					display: none;
+
+				}
+
+			}
+
+			@media $smWidth {
+
+				left: auto;
+				right: 0;
+				transform: translateX(0);
 
 			}
 
@@ -73,16 +101,6 @@
 
 			font-weight: 500;
 
-			@media $lgWidth {
-
-				font-size: 20px;
-				line-height: 32px;
-				display: block;
-				text-align: center;
-				margin: 50px 0;
-
-			}
-
 		}
 
 	}
@@ -90,7 +108,6 @@
 	&__btn-menu-toggle {
 
 		display: none;
-		grid-area: btn-menu;
 
 		@media $lgWidth {
 
@@ -110,35 +127,19 @@
 			border: 1px solid;
 			border-radius: 28px;
 
-			.menu-show & {
-
-				path {
-
-					opacity: 0;
-
-					&:first-child {
-
-						opacity: 1;
-
-					}
-
-				}
-
-			}
-
 		}
 
 	}
 
-	&__btns {
+	&__lang {
 
-		grid-area: btns;
-		display: flex;
-		gap: var(--gap);
+		grid-area: lang;
 
-		@media $smWidth {
+	}
 
-		}
+	&__btn {
+
+		grid-area: btn;
 
 	}
 
@@ -204,87 +205,3 @@
 
 }
 
-
-.menu-show {
-
-	@media $lgWidth {
-
-		background-image: linear-gradient(111deg, #0E33E4 20%, #5DA0FF);
-
-		.main,
-		.footer {
-
-			display: none;
-
-		}
-
-		.header {
-
-			position: relative;
-			flex-grow: 1;
-			top: 0;
-			display: grid;
-			padding: var(--margin) 0;
-
-			&--white {
-
-				padding-top: 10px;
-
-			}
-
-			.center {
-
-				display: grid;
-
-			}
-
-			&__grid {
-
-				grid-template-areas: "logo btn-menu btns"
-									 "menu menu menu";
-				grid-template-columns: auto 1fr auto;
-				grid-template-rows: auto 1fr;
-
-			}
-
-			&__menu {
-
-				display: block;
-
-			}
-
-		}
-
-	}
-
-	@media $smWidth {
-
-		.header {
-
-			&__grid {
-
-				grid-template-areas: "logo btn-menu"
-									 "menu menu"
-									 "btns btns";
-				grid-template-columns: auto auto;
-				grid-template-rows: auto 1fr auto;
-
-			}
-
-			&__menu {
-
-				display: block;
-
-			}
-
-			&__btns {
-
-				display: grid;
-
-			}
-
-		}
-
-	}
-
-}

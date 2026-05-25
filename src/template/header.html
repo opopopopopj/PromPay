@@ -16,7 +16,20 @@
 
 				<nav class="header__menu">
 
-					<ul>
+					<div class="header__btn-menu-toggle">
+
+						<button class="button btn-menu-toggle" type="button">
+							<svg width="24" height="24">
+								<path d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z"/>
+							</svg>
+							<span class="hidden-md">
+								Menu
+							</span>
+						</button>
+
+					</div>
+
+					<ul class="header__menu-list">
 
 {% for item in [
 	{
@@ -51,7 +64,7 @@
 
 				</nav>
 
-				<div class="header__btns">
+				<div class="header__lang">
 
 					<div class="lang">
 
@@ -98,20 +111,11 @@
 
 					</div>
 
-					<div class="header__btn-menu-toggle">
+				</div>
 
-						<button class="button btn-menu-toggle" type="button">
-							<svg width="24" height="24">
-								<path d="M3 4h18v2H3zm6 7h12v2H9zm-6 7h18v2H3z"/>
-							</svg>
-							<span class="hidden-sm">
-								Menu
-							</span>
-						</button>
+				<div class="header__btn hidden-sm">
 
-					</div>
-
-					<a class="btn btn--small hidden-sm" href="/get-card">
+					<a class="btn btn--small" href="/get-card">
 						Получить карту
 					</a>
 

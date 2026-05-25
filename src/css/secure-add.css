@@ -15,6 +15,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			padding: 30px;
+
+		}
+
 	}
 
 	&__flex {
@@ -52,6 +58,14 @@
 
 		}
 
+		@media $mdWidth {
+
+			font-size: 32px;
+			line-height: 40px;
+			margin-bottom: 16px;
+
+		}
+
 	}
 
 	&__text {
@@ -60,8 +74,9 @@
 		line-height: 32px;
 		max-width: 520px;
 
-		@media $lgWidth {
+		@media $mdWidth {
 
+			font-size: 18px;
 
 		}
 
@@ -78,6 +93,35 @@
 
 			grid-template-columns: 1fr 1fr 1fr;
 			gap: 80px;
+			font-size: 15px;
+
+			b {
+
+				font-size: 18px;
+				margin: 16px 0 10px;
+
+			}
+
+		}
+
+		@media $mdWidth {
+
+			margin-top: 32px;
+			gap: 24px;
+			font-size: 14px;
+
+			svg {
+
+				width: 60px;
+				height: 60px;
+
+			}
+
+			b {
+
+				font-size: 16px;
+
+			}
 
 		}
 
@@ -95,14 +139,6 @@
 			@media $lgWidth {
 
 				display: block;
-				font-size: 15px;
-
-				b {
-
-					font-size: 18px;
-					margin: 16px 0 10px;
-
-				}
 
 			}
 
@@ -143,6 +179,13 @@
 				width: auto;
 				height: 180px;
 				margin-right: -10px;
+
+			}
+
+			@media $mdWidth {
+
+				height: 160px;
+				margin: 0;
 
 			}
 
