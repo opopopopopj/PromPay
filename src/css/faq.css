@@ -23,6 +23,12 @@
 
 		}
 
+		@media $mdWidth {
+
+			font-size: 20px;
+
+		}
+
 	}
 
 	&__text {
@@ -42,9 +48,31 @@
 
 		}
 
+		@media $mdWidth {
+
+			font-size: 18px;
+			line-height: 32px;
+
+		}
+
 		ul li {
 
 			padding-left: 32px;
+
+			@media $mdWidth {
+
+				padding-left: 28px;
+
+				&::before {
+
+					width: 6px;
+					height: 6px;
+					top: 16px;
+					left: 10px;
+
+				}
+
+			}
 
 			&::before {
 

@@ -40,7 +40,7 @@
 								 "social app"
 								 "menu menu";
 			grid-template-columns: auto;
-			gap: 30px;
+			gap: 40px;
 
 		}
 
@@ -83,6 +83,12 @@
 
 				font-size: 14px;
 				margin-bottom: 16px;
+
+			}
+
+			@media $mdWidth {
+
+				margin-top: 20px;
 
 			}
 
