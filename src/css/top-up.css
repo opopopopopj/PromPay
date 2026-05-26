@@ -26,6 +26,13 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&__box {
@@ -36,7 +43,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
-		 background-color: #FAEFED;
+		outline:1px solid red;
+		 /*background-color: #FAEFED;*/
 
 		@media $lgWidth {
 
@@ -48,6 +56,12 @@
 
 			padding: 30px;
 			display: block;
+
+		}
+
+		@media $smWidth {
+
+			padding: 20px;
 
 		}
 
@@ -76,6 +90,7 @@
 		@media $smWidth {
 
 			grid-template-columns: 1fr;
+			gap: 8px;
 
 		}
 
@@ -154,6 +169,21 @@
 
 				width: 282px;
 				height: 378px;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			margin: 16px auto 0;
+			max-width: 282px;
+			border-bottom: 1px solid;
+
+			img {
+
+				width: 197px;
+				height: auto;
 
 			}
 

@@ -125,6 +125,28 @@
 			border: 1px solid;
 			border-radius: 28px;
 
+			path:first-child {
+
+				opacity: 0;
+
+			}
+
+			@media $smWidth {
+
+				.is-menu-open & path {
+
+					opacity: 0;
+
+					&:first-child {
+
+						opacity: 1;
+
+					}
+
+				}
+
+			}
+
 		}
 
 	}

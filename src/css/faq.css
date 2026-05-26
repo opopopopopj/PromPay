@@ -29,6 +29,13 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 16px;
+			line-height: 24px;
+
+		}
+
 	}
 
 	&__text {
@@ -55,9 +62,21 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 16px;
+
+		}
+
 		ul li {
 
 			padding-left: 32px;
+
+			@media $smWidth {
+
+				padding-left: 24px;
+
+			}
 
 			@media $mdWidth {
 
@@ -65,9 +84,9 @@
 
 				&::before {
 
-					width: 6px;
-					height: 6px;
-					top: 16px;
+					width: 5px;
+					height: 5px;
+					top: 15px;
 					left: 10px;
 
 				}

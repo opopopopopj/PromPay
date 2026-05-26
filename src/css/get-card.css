@@ -14,6 +14,19 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 24px;
+			line-height: 32px;
+
+			br {
+
+				display: none;
+
+			}
+
+		}
+
 	}
 
 	&__list {
@@ -32,6 +45,12 @@
 		@media $mdWidth {
 
 			gap: var(--gap);
+
+		}
+
+		@media $smWidth {
+
+			gap: 16px;
 
 		}
 
@@ -103,11 +122,24 @@
 
 		}
 
+		@media $smWidth {
+
+			padding: 16px 16px 12px;
+			font-size: 20px;
+
+		}
+
 	}
 
 	&__text {
 
 		padding: 0 30px 30px;
+
+		@media $smWidth {
+
+			padding: 0 16px 20px;
+
+		}
 
 	}
 

@@ -56,6 +56,12 @@
 
 		padding-bottom: 10px;
 
+		@media $smWidth {
+
+			padding-bottom: 2px;
+
+		}
+
 		svg {
 
 			transform: scaleY(-1);

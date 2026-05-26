@@ -61,19 +61,6 @@
 
 		}
 
-		@media $smWidth {
-
-			display: block;
-			position: relative;
-
-			img {
-
-				position: relative;
-
-			}
-
-		}
-
 	}
 
 	&__content {
@@ -93,6 +80,14 @@
 		@media $desktop {
 
 			min-height: 300px;
+
+		}
+
+		@media $smWidth {
+
+			padding: 20px;
+			font-size: 16px;
+			line-height: 24px;
 
 		}
 
@@ -135,6 +130,18 @@
 
 		}
 
+		@media $smWidth {
+
+			padding-bottom: 38%;
+
+			.promo__content {
+
+				min-height: 208px;
+
+			}
+
+		}
+
 	}
 
 	.promo-partners {
@@ -157,6 +164,41 @@
 			.promo__content {
 
 				min-height: 252px;
+
+			}
+
+		}
+
+		@media $smWidth {
+
+			.promo__img {
+
+				position: static;
+				justify-content: center;
+				padding-bottom: 10px;
+
+				img {
+
+					position: relative;
+					width: 313px;
+					max-width: 100%;
+					height: auto;
+					top: -10px;
+					border-radius: 0;
+
+				}
+
+			}
+
+			.promo__content {
+
+				min-height: 200px;
+
+			}
+
+			.promo__foot {
+
+				display: block;
 
 			}
 

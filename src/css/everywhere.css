@@ -65,14 +65,10 @@
 
 		position: relative;
 
-		@media $smWidth {
+		img {
 
-			img {
-
-				width: 100%;
-				height: auto;
-
-			}
+			max-width: 100%;
+			height: auto;
 
 		}
 
@@ -89,21 +85,28 @@
 
 		}
 
+		li {
+
+			max-width: var(--everywhereWidth )
+
+		}
+
 		ul {
 
 			display: flex;
-			gap: 48px;
+			--gap: 48px;
+			gap: var(--gap);
 			justify-content: space-between;
 
 			@media $lgWidth {
 
-				gap: 20px;
+				--gap: 20px;
 
 			}
 
 			@media $mdWidth {
 
-				gap: 12px;
+				--gap: 12px;
 
 				&:last-child {
 
@@ -144,8 +147,6 @@
 					max-width: calc( 100% - 50px );
 
 				}
-
-
 
 			}
 

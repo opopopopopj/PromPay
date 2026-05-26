@@ -52,10 +52,13 @@
 
 				listBox.append(ul);
 				ulIndex++;
+
 			}
 
-			const size = items[0].querySelector('img').width;
-			items.forEach( li => li.querySelector('img').style.maxWidth = size + 'px');
+			const count = listBox.firstElementChild.children.length;
+			const gap = parseFloat(getComputedStyle(listBox.firstElementChild).gap);
+			const width = ( listBox.clientWidth - ( ( count - 1) * gap ) ) / count;
+			document.documentElement.style.setProperty('--everywhereWidth', width + 'px');
 
 		}
 
