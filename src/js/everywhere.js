@@ -54,9 +54,12 @@
 				ulIndex++;
 			}
 
+			const size = items[0].querySelector('img').width;
+			items.forEach( li => li.querySelector('img').style.maxWidth = size + 'px');
+
 		}
 
-		regroupEverywhereList();
+		window.addEventListener("load", regroupEverywhereList);
 
 		window.addEventListener("resize", () => {
 

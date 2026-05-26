@@ -5,8 +5,9 @@
 	&__box {
 
 		padding: 70px 80px;
-		background-image: linear-gradient(111.46deg, #2C2C2C, #191919);
+		/* background-image: linear-gradient(111.46deg, #2C2C2C, #191919); */
 		border-radius: 30px;
+		outline:1px solid red;
 		color: #fff;
 
 		@media $lgWidth {
@@ -18,6 +19,12 @@
 		@media $mdWidth {
 
 			padding: 30px;
+
+		}
+
+		@media $smWidth {
+
+			padding: 20px;
 
 		}
 
@@ -77,6 +84,12 @@
 		@media $mdWidth {
 
 			font-size: 18px;
+
+		}
+
+		@media $smWidth {
+
+			font-size: 16px;
 
 		}
 

@@ -18,8 +18,10 @@
 
 	}
 
-	@media $xsWidth {
+	@media $smWidth {
 
+		font-size: 38px;
+		line-height: 48px;
 
 	}
 
@@ -47,8 +49,8 @@
 
 	@media $smWidth {
 
-		font-size: 36px;
-		font-weight: 700;
+		font-size: 32px;
+		line-height: 40px;
 
 	}
 

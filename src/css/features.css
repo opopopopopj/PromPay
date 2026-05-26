@@ -9,14 +9,15 @@
 		@media $mdWidth {
 
 			grid-template-columns: 1fr;
+			gap: var(--gap);
 
 		}
 
 	}
 
 	&__item {
-outline:1px solid red;
-		/*background-color: #fff;*/
+
+		background-color: #fff;
 		border-radius: 30px;
 		position: relative;
 		display: flex;
@@ -53,6 +54,14 @@ outline:1px solid red;
 
 				}
 
+				@media $smWidth {
+
+					padding-bottom: 14px;
+					padding-right: 20px;
+					min-height: 0;
+
+				}
+
 			}
 
 			img {
@@ -66,6 +75,14 @@ outline:1px solid red;
 
 					width: 338px;
 					height: 145px;
+
+				}
+
+				@media $smWidth {
+
+					width: 100%;
+					height: auto;
+					border-radius: 0 0 30px 30px;
 
 				}
 
@@ -93,6 +110,13 @@ outline:1px solid red;
 
 				}
 
+				@media $smWidth {
+
+					min-width: 0;
+					padding-right: 20px;
+
+				}
+
 			}
 
 		}
@@ -112,6 +136,17 @@ outline:1px solid red;
 						height: auto;
 
 					}
+
+				}
+
+			}
+
+			@media $smWidth {
+
+				.features__img {
+
+					width: 100%;
+					margin: 10px 0 28px;
 
 				}
 
@@ -149,6 +184,23 @@ outline:1px solid red;
 
 			}
 
+			@media $smWidth {
+
+				.features__img {
+
+					width: 100%;
+					margin-top: -4px;
+
+					img {
+
+						width: 96px;
+
+					}
+
+				}
+
+			}
+
 		}
 
 	}
@@ -157,6 +209,12 @@ outline:1px solid red;
 
 		padding: 30px;
 		flex-grow: 1;
+
+		@media $smWidth {
+
+			padding: 20px;
+
+		}
 
 	}
 
@@ -170,7 +228,6 @@ outline:1px solid red;
 
 		@media $lgWidth {
 
-			outline:1px solid red;
 			width: 160px;
 
 		}
@@ -199,7 +256,13 @@ outline:1px solid red;
 		@media $mdWidth {
 
 			line-height: 32px;
-			padding: 4px 0;
+
+		}
+
+		@media $smWidth {
+
+			font-size: 20px;
+			margin-bottom: 4px;
 
 		}
 

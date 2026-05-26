@@ -30,6 +30,14 @@
 
 		}
 
+		@media $smWidth {
+
+			font-size: 16px;
+			margin: 16px 0;
+			text-wrap: balance;
+
+		}
+
 		b {
 
 			color: #8D0101;
@@ -49,6 +57,12 @@
 		@media $lgWidth {
 
 			padding: 40px;
+
+		}
+
+		@media $smWidth {
+
+			padding: 40px 20px 20px;
 
 		}
 
@@ -103,6 +117,22 @@
 
 				display: block;
 				white-space: normal;
+				width: auto;
+
+			}
+
+			th {
+
+				font-size: 16px;
+				line-height: 24px;
+				padding: 0;
+
+			}
+
+			td {
+
+				font-size: 20px;
+				padding: 4px 0 24px;
 
 			}
 
@@ -137,6 +167,19 @@
 			align-items: center;
 			gap: 16px;
 
+			@media $smWidth {
+
+				gap: 8px;
+
+				svg {
+
+					width: 24px;
+					height: 24px;
+
+				}
+
+			}
+
 		}
 
 	}
@@ -162,6 +205,13 @@
 				min-width: 300px;
 
 			}
+
+		}
+
+		@media $smWidth {
+
+			margin-top: 8px;
+			display: block;
 
 		}
 
