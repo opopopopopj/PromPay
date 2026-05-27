@@ -43,7 +43,7 @@ let config             = null;
 
 const timestamp        = Date.now();
 const site             = 'paytao.org';
-const domain           = 'paytao.1bg.ru';
+const domain           = 'prompay.1bg.ru';
 
 const folderWatch      = 'main';
 
