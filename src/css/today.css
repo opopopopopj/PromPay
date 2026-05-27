@@ -79,7 +79,6 @@
 
 		}
 
-
 	}
 
 	&__list {
@@ -121,7 +120,8 @@
 		align-items: flex-end;
 		position: relative;
 		height: 100px;
-		margin: 0 8px;
+		max-width: 338px;
+		margin: 0 auto;
 
 		@media $lgWidth {
 
@@ -145,6 +145,18 @@
 
 		}
 
+		@media $xsWidth {
+
+			img:not([class]) {
+
+				max-width: 70%;
+				width: auto;
+				height: auto;
+
+			}
+
+		}
+
 	}
 
 	&__name {
@@ -154,7 +166,7 @@
 		font-size: 22px;
 		line-height: 32px;
 
-		@media $mdWidth {
+		@media $smWidth {
 
 			font-size: 20px;
 

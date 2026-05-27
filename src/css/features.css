@@ -210,6 +210,14 @@
 		padding: 30px;
 		flex-grow: 1;
 
+		@media $mdWidth {
+
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+
+		}
+
 		@media $smWidth {
 
 			padding: 20px;

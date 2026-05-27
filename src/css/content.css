@@ -25,6 +25,13 @@
 
 	}
 
+	@media $xsWidth {
+
+		font-size: 32px;
+		line-height: 40px;
+
+	}
+
 }
 
 .h2 {
@@ -51,6 +58,13 @@
 
 		font-size: 32px;
 		line-height: 40px;
+
+	}
+
+	@media $xsWidth {
+
+		font-size: 26px;
+		line-height: 32px;
 
 	}
 

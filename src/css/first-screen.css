@@ -53,6 +53,12 @@
 			display: block;
 			color: #940000;
 
+			@media $xsWidth {
+
+				display: inline;
+
+			}
+
 		}
 
 		@media $mdWidth {
@@ -106,16 +112,26 @@
 
 		}
 
+		@media $xsWidth {
+
+			br {
+
+				display: none;
+
+			}
+
+		}
+
 	}
 
 	&__btn {
 
-		margin: 49px 0 45px;
+		margin: 50px 0 46px;
 		max-width: 400px;
 
 		@media $lgWidth {
 
-			margin-bottom: 42px;
+			margin-bottom: 40px;
 
 		}
 
@@ -157,6 +173,7 @@
 
 				width: 192px;
 				height: 68px;
+				max-width: 100%;
 
 			}
 

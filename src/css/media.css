@@ -101,6 +101,12 @@
 
 @media $xsWidth {
 
+	:root {
+
+		--indent: 16px;
+
+	}
+
 	.hidden-xs {
 
 		display: none !important;

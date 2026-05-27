@@ -193,7 +193,7 @@
 	&__btn {
 
 		display: flex;
-		margin-top: 30px;
+		margin-top: 32px;
 
 		@media $lgWidth {
 
@@ -212,6 +212,16 @@
 
 			margin-top: 8px;
 			display: block;
+
+		}
+
+		@media $xsWidth {
+
+			.btn {
+
+				min-width: 250px;
+
+			}
 
 		}
 
@@ -237,7 +247,7 @@
 	&__img {
 
 		position: absolute;
-		right: 32px;
+		right: 44px;
 		bottom: 0;
 
 		@media $lgWidth {
