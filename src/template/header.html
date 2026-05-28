@@ -65,7 +65,7 @@
 
 				</nav>
 
-				<div class="header__lang hidden-sm">
+				<div class="header__lang">
 
 					<div class="lang">
 
@@ -124,69 +124,41 @@
 
 			</div>
 
-			<div class="header__mobile">
-
-				<p class="header__mobile-head">
-					Услуги
-				</p>
-
-				<ul class="header__mobile-menu">
-					<li>
-						<a href="/">Виртуальные карты</a>
-					</li>
-					<li>
-						<a href="/">Европейские виртуальные карты</a>
-					</li>
-					<li>
-						<a href="/">Зарубежные карты</a>
-					</li>
-					<li>
-						<a href="/">Оплата зарубежных сервисов</a>
-					</li>
-				</ul>
-
-				<p class="header__mobile-head">
-					Языки
-				</p>
-
-				<ul class="header__mobile-menu">
-{% for item in [
-	{
-		name : "English",
-		code : "en"
-	},
-	{
-		name : "한국어",
-		code : "ch"
-	},
-	{
-		name : "French",
-		code : "fr"
-	},
-	{
-		name : "Português",
-		code : "po"
-	},
-	{
-		name : "Русский",
-		code : "ru",
-		current : true
-	}
-] %}
-					<li>
-						<a href="?{{ item.code }}"{% if item.current %} class="is-current" {% endif %}>
-							{{ item.name }}
-						</a>
-					</li>
-{% endfor %}
-				</ul>
-
-				<a class="btn btn--small" href="/get-card">
-					Получить карту
-				</a>
-
-			</div>
-
 		</div>
 
 	</header>
+
+	<nav class="menu-mobile">
+
+		<div class="menu-mobile__box">
+
+			<p class="menu-mobile__head">
+				Услуги
+			</p>
+
+			<ul class="menu-mobile__list">
+				<li>
+					<a href="/">Виртуальные карты</a>
+				</li>
+				<li>
+					<a href="/">Европейские виртуальные карты</a>
+				</li>
+				<li>
+					<a href="/">Зарубежные карты</a>
+				</li>
+				<li>
+					<a href="/">Оплата зарубежных сервисов</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="menu-mobile__btn">
+
+			<a class="btn btn--big" href="/get-card">
+				Получить карту
+			</a>
+
+		</div>
+
+	</nav>

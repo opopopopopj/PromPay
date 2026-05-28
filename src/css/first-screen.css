@@ -110,10 +110,6 @@
 
 			}
 
-		}
-
-		@media $xsWidth {
-
 			br {
 
 				display: none;

@@ -14,9 +14,4 @@ npm run build
 **Android >= 5**
 
 ### Working hours:
-20:00
-
-
-фон
-кнопки
-webp
+30:00

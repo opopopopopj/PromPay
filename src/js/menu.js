@@ -2,8 +2,6 @@
 
 	if ( btn ) {
 
-		const header = document.querySelector('.header');
-
 		btn.addEventListener('click', event => {
 
 			if ( event.detail > 1 ) {
@@ -12,7 +10,7 @@
 
 			}
 
-			header.classList.toggle('is-menu-open');
+			document.body.classList.toggle('is-menu-open');
 
 		});
 
@@ -24,7 +22,7 @@
 
 			}
 
-			header.classList.remove('is-menu-open');
+			document.body.classList.remove('is-menu-open');
 
 		});
 
